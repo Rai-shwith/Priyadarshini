@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 import HeroSection from './components/HeroSection'
 import NumberSection from './components/NumberSection'
 import Education from './components/Education'
+import Facilities from './components/Facilities'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <HeroSection />
       <NumberSection />
       <Education />
+      <Facilities />
     </Background>
   )
 }
