@@ -21,7 +21,7 @@ const HeroSection = () => {
             Material, Human & Divine Education
           </h1>
           <p className="text-slate-500 md:text-2xl text-xs">
-            The mission of PEMS is to create a better future for all children.
+            The mission of P.E.M.H.P.S is to create a better future for all children.
             We achieve this by maximizing opportunities for children through
             holistic, values-based education of the highest quality and through
             initiatives that promote unity and meaningful social action for

@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <div className="flex flex-col w-full items-center">
       <div className="my-5">Your First Step to Excellence</div>
-      <div className="text-4xl font-bold my-5">PEMS EDUCATION</div>
+      <div className="text-4xl font-bold my-5 text-center">P.E.M.H.P.S EDUCATION</div>
       <div className="flex flex-col md:flex-row">
         <EducationItems
           img={"prePrimary.png"}

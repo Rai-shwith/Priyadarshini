@@ -5,7 +5,7 @@ const Facilities = () => {
   return (
     <div className="flex flex-col w-full items-center">
       <div className="my-5">Empowering Learning with the Best</div>
-      <div className="text-4xl font-bold my-5">PEMS FACILITIES</div>
+      <div className="text-4xl font-bold my-5 text-center">P.E.M.H.P.S FACILITIES</div>
       <div className="flex flex-col md:flex-row flex-wrap justify-center">
         <FacilityItems
           img={"computerLab.png"}
