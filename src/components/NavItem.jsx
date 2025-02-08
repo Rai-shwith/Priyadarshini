@@ -7,7 +7,11 @@ const NavItem = ({ items }) => {
       <div className="hidden md:flex gap-20">
         {items.map((item) => {
           return (
-            <a href={item.link} key={item.value} className="appearance-none">
+            <a
+              href={item.link}
+              key={item.value}
+              className="text-gray-700 hover:text-blue-500 transition-colors duration-300"
+            >
               {item.value}
             </a>
           );
@@ -55,7 +59,7 @@ const NavItem = ({ items }) => {
                 />
               </svg>
             </button>
-            <div className="flex flex-col gap-4 absolute  right-5 bg-white p-4 rounded-lg shadow-md">
+            <div className="flex flex-col gap-4 z-50 absolute  right-5 bg-white p-4 rounded-lg shadow-md">
               {items.map((item) => {
                 return (
                   <a
