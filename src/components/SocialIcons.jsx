@@ -4,7 +4,7 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube, FaPhoneAlt, 
 const SocialLinks = () => {
     // TODO: Add the correct links to the social media icons
   return (
-    <div className="flex w-full justify-center gap-5 mt-2 md:mt-10">
+    <div className="flex w-full justify-center gap-5 md:gap-10 mt-2 md:mt-10">
         <a href="tel:+1234567890" target="_blank" rel="noopener noreferrer">
         <FaPhoneAlt size={30} />
       </a>
