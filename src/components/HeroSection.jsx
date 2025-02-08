@@ -19,22 +19,23 @@ const HeroSection = () => {
             <h1 className="text-4xl md:text-7xl font-bold text-black md:text-white">
               Material, Human & Divine Education
             </h1>
-            <p className="text-slate-500 md:text-2xl">
+            <p className="text-slate-500 md:text-2xl text-xs">
               The mission of PEMS is to create a better future for all children.
               We achieve this by maximizing opportunities for children through
               holistic, values-based education of the highest quality and
               through initiatives that promote unity and meaningful social
               action for development.
             </p>
-          </div>
-            <div className="flex w-full justify-between mt-10">
-                <button className="bg-amber-400 hover:bg-amber-500 text-white font-bold py-2 px-4 rounded-full">
+            <div className="flex w-full justify-between mt-5 md:mt-10 md:text-2xl">
+                {/* TODO: add Navigation */}
+                <button className="bg-amber-500 text-white hover:bg-transparent active:bg-transparent cursor-pointer border-amber-500 border hover:text-amber-500 active:text-amber-500   py-2 px-4 rounded-full">
                     About Us
                 </button>
-                <button className="border-amber-400 text- hover:bg-amber-500 border text-white font-bold py-2 px-4 rounded-full">
+                <button className="border-amber-500 border text-amber-500 cursor-pointer active:bg-amber-500 hover:bg-amber-500 active:text-white hover:text-white py-2 px-4 rounded-full">
                     Online Admission
                 </button>
             </div>
+          </div>
       </div>
     </div>
   );
