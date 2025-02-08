@@ -14,7 +14,7 @@ const NumberSection = () => {
             result: 100,
             alumni: 4000,
           };
-          const duration = 500; // 0.5 seconds
+          const duration = 3000; // milliseconds
           const increments = {
             students: targets.students / (duration / 10),
             teachers: targets.teachers / (duration / 10),
@@ -40,7 +40,7 @@ const NumberSection = () => {
           }, 10);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.2 }
     );
 
     if (sectionRef.current) {
