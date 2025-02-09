@@ -1,25 +1,20 @@
-import React from 'react'
-import Background from './components/Background'
-import NavBar from './components/NavBar'
-import HeroSection from './components/HeroSection'
-import NumberSection from './components/NumberSection'
-import Education from './components/Education'
-import Facilities from './components/Facilities'
-import ContactUs from './components/ContactUs'
-import AdmissionForm from './components/AdmissionForm'
+import React from "react";
+import Background from "./components/Background";
+import NavBar from "./components/NavBar";
+import AdmissionForm from "./components/AdmissionForm";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Home";
 
 const App = () => {
   return (
     <Background>
       <NavBar />
-      <HeroSection />
-      <NumberSection />
-      <Education />
-      <Facilities />
-      <ContactUs />
-      <AdmissionForm />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/admission" element={<AdmissionForm />} />
+      </Routes>
     </Background>
-  )
-}
+  );
+};
 
-export default App
+export default App;

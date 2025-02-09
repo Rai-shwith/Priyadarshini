@@ -1,5 +1,6 @@
 import React from "react";
 import SocialLinks from "./SocialIcons";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -29,12 +30,12 @@ const HeroSection = () => {
           </p>
           <div className="flex w-full justify-between mt-5 md:mt-10 md:text-2xl">
             {/* TODO: add Navigation */}
-            <button className="bg-amber-500 text-white hover:bg-transparent active:bg-transparent cursor-pointer border-amber-500 border hover:text-amber-500 active:text-amber-500   py-2 px-4 rounded-full">
+            <Link to={"/about"} className="bg-amber-500 text-white hover:bg-transparent active:bg-transparent cursor-pointer border-amber-500 border hover:text-amber-500 active:text-amber-500   py-2 px-4 rounded-full">
               About Us
-            </button>
-            <button className="border-amber-500 border text-amber-500 cursor-pointer active:bg-amber-500 hover:bg-amber-500 active:text-white hover:text-white py-2 px-4 rounded-full">
+            </Link>
+            <Link to={"/admission"} className="border-amber-500 border text-amber-500 cursor-pointer active:bg-amber-500 hover:bg-amber-500 active:text-white hover:text-white py-2 px-4 rounded-full">
               Online Admission
-            </button>
+            </Link>
           </div>
         </div>
             <SocialLinks />

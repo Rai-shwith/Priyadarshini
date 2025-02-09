@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavItem = ({ items }) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -7,13 +8,13 @@ const NavItem = ({ items }) => {
       <div className="hidden md:flex gap-20">
         {items.map((item) => {
           return (
-            <a
-              href={item.link}
+            <Link
+              to={item.link}
               key={item.value}
               className="text-gray-700 hover:text-blue-500 transition-colors duration-300"
             >
               {item.value}
-            </a>
+            </Link>
           );
         })}
       </div>
