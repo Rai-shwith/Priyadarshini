@@ -7,7 +7,7 @@ const HeroSection = () => {
     <div className="flex flex-col w-full">
       <div className="relative w-11/12 self-center md:w-3/4">
         <video
-          src="/video/PEMS.mp4"
+          src="video/PEMS.mp4"
           autoPlay
           loop
           muted
