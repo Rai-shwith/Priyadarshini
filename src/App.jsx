@@ -6,6 +6,7 @@ import NumberSection from './components/NumberSection'
 import Education from './components/Education'
 import Facilities from './components/Facilities'
 import ContactUs from './components/ContactUs'
+import AdmissionForm from './components/AdmissionForm'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Education />
       <Facilities />
       <ContactUs />
+      <AdmissionForm />
     </Background>
   )
 }

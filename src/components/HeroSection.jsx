@@ -14,13 +14,13 @@ const HeroSection = () => {
         ></video>
         {/* <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div> */}
         <div className="md:absolute md:top-1/6 p-5 flex flex-col gap-2 justify-start">
-          <h3 className="text-2xl md:text-4xl font-semibold text-amber-400 md:text-amber-200">
+          <h3 className="text-2xl md:text-4xl font-bold text-amber-400 md:text-amber-200">
             Priyadarshini School
           </h3>
           <h1 className="text-4xl md:text-7xl font-bold text-black md:text-white">
             Material, Human & Divine Education
           </h1>
-          <p className="text-slate-500 md:text-2xl text-xs">
+          <p className="text-white md:text-2xl text-xs">
             The mission of P.E.M.H.P.S is to create a better future for all children.
             We achieve this by maximizing opportunities for children through
             holistic, values-based education of the highest quality and through
