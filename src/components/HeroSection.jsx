@@ -21,7 +21,7 @@ const HeroSection = () => {
           <h1 className="text-4xl md:text-7xl font-bold text-black md:text-white">
             Material, Human & Divine Education
           </h1>
-          <p className="text-white md:text-2xl text-xs">
+          <p className="md:text-white md:text-2xl text-xs">
             The mission of P.E.M.H.P.S is to create a better future for all children.
             We achieve this by maximizing opportunities for children through
             holistic, values-based education of the highest quality and through

@@ -1,16 +1,46 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { useNotification } from "../context/NotificationContext";
+
 
 const AdmissionForm = () => {
+  const { triggerNotification } = useNotification();
+  const [loading, setLoading] = useState(false);
   const {
     register,
     handleSubmit,
-    watch,
+    reset,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log("Form Data:", data);
-    alert("Form submitted successfully!");
+  const onSubmit = async (data) => {
+    try {
+      setLoading(true);
+      const form = new FormData();
+
+      Object.keys(data).forEach((key) => {
+        form.append(key, data[key]);
+      });
+
+      const response = await fetch("https://script.google.com/macros/s/AKfycby9kqx0JRUnHwEH5ctY0TPgFPc2iEcr-4MCuf82CZWg-49tzPJLlorkZ6IpVbwmr19-JA/exec", {
+        method: "POST",
+        body: form,
+      });
+      const result = await response.json()
+      if (result.status != "Success") {
+        triggerNotification('error', (new Error('There was an error sending the message!')));
+        throw new Error("Failed to submit form");
+      }
+      console.log("Form successfully submitted:", data);
+      triggerNotification('success', 'Message successfully sent!');
+      reset(); // Clears all input fields
+  
+    } catch (error) {
+      triggerNotification('error', (new Error('There was an error sending the message!')));
+      console.error("Error submitting form:", error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -111,6 +141,15 @@ const AdmissionForm = () => {
               className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-400"
             />
           </div>
+
+          <div>
+            <label className="block font-medium">Email</label>
+            <input
+              {...register("email")}
+              type="email"
+              className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-400"
+            />
+          </div>
         </div>
 
         {/* Address Section */}
@@ -195,9 +234,9 @@ const AdmissionForm = () => {
         <div className="w-full flex justify-center items-center">
           <button
             type="submit"
-            className="w-full md:w-fit  bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600"
+            className={`w-full md:w-fit  bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 ${loading? 'cursor-not-allowed opacity-50': ''}`}
           >
-            Submit Application
+            {loading ? "Submitting..." : "Submit Application"}
           </button>
         </div>
       </form>
