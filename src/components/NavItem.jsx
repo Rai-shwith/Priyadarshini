@@ -16,7 +16,7 @@ const NavItem = ({ items }) => {
   };
   useEffect(() => {
     if (showMenu) {
-        window.addEventListener("pointerdown", handleClickOutside);
+      window.addEventListener("pointerdown", handleClickOutside);
     } else {
       window.removeEventListener("pointerdown", handleClickOutside);
     }
@@ -30,7 +30,10 @@ const NavItem = ({ items }) => {
       <div className="hidden md:flex gap-16">
         {items.map((item) => {
           return (
-            <div className="flex gap-2 items-center hover:scale-110 transition-transform ease-in-out duration-300" key={item.value}>
+            <div
+              className="flex gap-2 items-center hover:scale-110 transition-transform ease-in-out duration-300"
+              key={item.value}
+            >
               {item.icon}
               <Link
                 to={item.link}
@@ -47,9 +50,10 @@ const NavItem = ({ items }) => {
           // onMouseLeave={() => setIsLangOpen(false)}
           className="hover:scale-110 transition-transform ease-in-out duration-300 hover:text-blue-500"
         >
-          <button 
-          onClick={() => switchLanguage(language === "en" ? "kn" : "en")}
-          className="cursor-pointer flex items-center gap-1">
+          <button
+            onClick={() => switchLanguage(language === "en" ? "kn" : "en")}
+            className="cursor-pointer flex items-center gap-1"
+          >
             <TbLanguage />
             <div className="">{language !== "en" ? "English" : "ಕನ್ನಡ"}</div>
           </button>
@@ -121,7 +125,11 @@ const NavItem = ({ items }) => {
                 return (
                   <div className="flex gap-2 items-center" key={item.value}>
                     {item.icon}
-                    <Link to={item.link} className="appearance-none">
+                    <Link
+                      to={item.link}
+                      className="appearance-none"
+                      onClick={() => setShowMenu(false)}
+                    >
                       {item.value}
                     </Link>
                   </div>
@@ -129,9 +137,10 @@ const NavItem = ({ items }) => {
               })}
               <div className="font-semibold ">
                 <button
-                  onClick={() =>
-                    switchLanguage(language === "en" ? "kn" : "en")
-                  }
+                  onClick={() => {
+                    switchLanguage(language === "en" ? "kn" : "en");
+                    setShowMenu(false);
+                  }}
                   className="flex gap-2 items-center"
                 >
                   <TbLanguage />
