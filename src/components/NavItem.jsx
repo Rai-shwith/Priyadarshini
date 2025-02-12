@@ -81,7 +81,8 @@ const NavItem = ({ items }) => {
           )} */}
         </div>
       </div>
-      <div className="md:hidden">
+      {/* <div className="md:hidden relative"> */}
+      <div className="md:hidden relative top-5 flex flex-col items-end gap-5">
         {!showMenu ? (
           <button className="appearance-none" onClick={() => setShowMenu(true)}>
             <svg
@@ -100,6 +101,7 @@ const NavItem = ({ items }) => {
             </svg>
           </button>
         ) : (
+          // </div>
           <div className="" ref={phoneMenuNav}>
             <button
               className="appearance-none"
@@ -120,7 +122,7 @@ const NavItem = ({ items }) => {
                 />
               </svg>
             </button>
-            <div className="flex flex-col gap-4 z-50 absolute  right-5 bg-white p-4 rounded-lg shadow-md">
+            <div className="flex flex-col gap-4 z-50 absolute  right-0 bg-white p-4 rounded-lg shadow-md">
               {items.map((item) => {
                 return (
                   <div className="flex gap-2 items-center" key={item.value}>
@@ -135,23 +137,21 @@ const NavItem = ({ items }) => {
                   </div>
                 );
               })}
-              <div className="font-semibold ">
-                <button
-                  onClick={() => {
-                    switchLanguage(language === "en" ? "kn" : "en");
-                    setShowMenu(false);
-                  }}
-                  className="flex gap-2 items-center"
-                >
-                  <TbLanguage />
-                  <div className="">
-                    {language !== "en" ? "English" : "ಕನ್ನಡ"}
-                  </div>
-                </button>
-              </div>
             </div>
           </div>
         )}
+        <div className="text-xs font-semibold bg-slate-300 px-3 py-1 rounded-full w-[5rem]">
+          <button
+            onClick={() => {
+              switchLanguage(language === "en" ? "kn" : "en");
+              setShowMenu(false);
+            }}
+            className="flex gap-2 items-center"
+          >
+            <TbLanguage />
+            <div className="">{language !== "en" ? "English" : "ಕನ್ನಡ"}</div>
+          </button>
+        </div>
       </div>
     </div>
   );
