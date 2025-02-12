@@ -1,5 +1,8 @@
 import React from "react";
 import NavItem from "./NavItem";
+import { AiFillHome, AiOutlineInfoCircle } from "react-icons/ai";
+import { MdOutlineHowToReg } from "react-icons/md";
+import { FaInfoCircle, FaPhoneAlt, FaSchool, FaUserGraduate } from "react-icons/fa";
 
 const NavBar = () => {
   return (
@@ -11,10 +14,10 @@ const NavBar = () => {
         </div>
           <NavItem
             items={[
-              { link: "/", value: "Home" },
-              { link: "/about", value: "About us" },
-              { link: "/admission", value: "Admission" },
-              { link: "/contact", value: "Contact" },
+              { link: "/", value: "Home" ,icon: <AiFillHome/> },
+              { link: "/about", value: "About us" , icon : <FaInfoCircle />},
+              { link: "/admission", value: "Admission",icon : <FaUserGraduate /> },
+              { link: "/contact", value: "Contact" , icon: <FaPhoneAlt /> },
             ]}
           />
       </div>
