@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import { NotificationProvider } from "./context/NotificationContext";
 import { LanguageProvider } from "./context/LanguageContext";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/admission" element={<AdmissionForm />} />
           </Routes>
+          <Footer />
         </Background>
       </NotificationProvider>
     </LanguageProvider>
