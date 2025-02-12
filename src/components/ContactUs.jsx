@@ -1,9 +1,11 @@
 import React from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { useLanguage } from "../context/LanguageContext";
 const ContactUs = () => {
+  const text = useLanguage().text.ContactSection;
   return (
     <div className="flex flex-col w-full items-center my-10">
-      <h1 className="font-bold text-4xl mb-5">CONTACT US</h1>
+      <h1 className="font-bold text-4xl mb-5">{text.heading}</h1>
       <div className="w-11/12 md:w-3/4 md:text-2xl self-center bg-white shadow-lg drop-shadow-lg p-5 rounded-lg flex flex-col gap-5">
         <a href="tel:+1234567890" target="_blank" rel="noopener noreferrer" className="flex justify-start gap-5">
           <div >

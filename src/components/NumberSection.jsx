@@ -1,8 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 const NumberSection = () => {
   const [counts, setCounts] = useState({ students: 0, teachers: 0, result: 0, alumni: 0 });
   const sectionRef = useRef(null);
+
+  const text = useLanguage().text.NumberSection;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -58,19 +61,19 @@ const NumberSection = () => {
     <div ref={sectionRef} className='flex flex-wrap bg-blue-950 h-80 w-screen text-white justify-around items-center'>
       <div className="flex flex-col items-center">
         <h2 className="text-5xl md:text-8xl">{Math.ceil(counts.students)}+</h2>
-        <p>Students currently enrolled</p>
+        <p>{text["1"]}</p>
       </div>
       <div className="flex flex-col items-center">
         <h2 className="text-5xl md:text-8xl">{Math.ceil(counts.teachers)}</h2>
-        <p>Teachers & Staffs</p>
+        <p>{text["2"]}</p>
       </div>
       <div className="flex flex-col items-center">
         <h2 className="text-5xl md:text-8xl">{Math.ceil(counts.result)}%</h2>
-        <p>Result percentage</p>
+        <p>{text["3"]}</p>
       </div>
       <div className="flex flex-col items-center">
         <h2 className="text-5xl md:text-8xl">{Math.ceil(counts.alumni)}</h2>
-        <p>Alumni</p>
+        <p>{text["4"]}</p>
       </div>
     </div>
   );

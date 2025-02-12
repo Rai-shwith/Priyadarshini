@@ -5,8 +5,8 @@ import { TbLanguage } from "react-icons/tb";
 
 const NavItem = ({ items }) => {
   const [showMenu, setShowMenu] = useState(false);
-  const [isLangOpen, setIsLangOpen] = useState(false);
-  const { language, switchLanguage, text } = useLanguage();
+  // const [isLangOpen, setIsLangOpen] = useState(false);
+  const { language, switchLanguage } = useLanguage();
   const phoneMenuNav = useRef(null);
 
   const handleClickOutside = (event) => {
@@ -30,7 +30,7 @@ const NavItem = ({ items }) => {
       <div className="hidden md:flex gap-16">
         {items.map((item) => {
           return (
-            <div className="flex gap-2 items-center" key={item.value}>
+            <div className="flex gap-2 items-center hover:scale-110 transition-transform ease-in-out duration-300" key={item.value}>
               {item.icon}
               <Link
                 to={item.link}
@@ -43,15 +43,17 @@ const NavItem = ({ items }) => {
         })}
         {/* Desktop Dropdown */}
         <div
-          onMouseEnter={() => setIsLangOpen(true)}
-          onMouseLeave={() => setIsLangOpen(false)}
-          className="relative"
+          // onMouseEnter={() => setIsLangOpen(true)}
+          // onMouseLeave={() => setIsLangOpen(false)}
+          className="hover:scale-110 transition-transform ease-in-out duration-300 hover:text-blue-500"
         >
-          <button className="cursor-pointer flex items-center gap-1">
+          <button 
+          onClick={() => switchLanguage(language === "en" ? "kn" : "en")}
+          className="cursor-pointer flex items-center gap-1">
             <TbLanguage />
-            <div className="">{language === "en" ? "English" : "ಕನ್ನಡ"}</div>
+            <div className="">{language !== "en" ? "English" : "ಕನ್ನಡ"}</div>
           </button>
-          {isLangOpen && (
+          {/* {isLangOpen && (
             <div className="absolute right-3 top-6 z-50 w-32 bg-white shadow-lg rounded-lg overflow-hidden">
               <button
                 onClick={() => {
@@ -72,7 +74,7 @@ const NavItem = ({ items }) => {
                 ಕನ್ನಡ
               </button>
             </div>
-          )}
+          )} */}
         </div>
       </div>
       <div className="md:hidden">
@@ -134,7 +136,7 @@ const NavItem = ({ items }) => {
                 >
                   <TbLanguage />
                   <div className="">
-                    {language === "en" ? "English" : "ಕನ್ನಡ"}
+                    {language !== "en" ? "English" : "ಕನ್ನಡ"}
                   </div>
                 </button>
               </div>

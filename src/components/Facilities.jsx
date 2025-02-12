@@ -1,57 +1,59 @@
 import React from "react";
 import FacilityItems from "./FacilityItems";
+import { useLanguage } from "../context/LanguageContext";
 
 const Facilities = () => {
+  const text = useLanguage().text.FacilitySection;
   return (
     <div className="flex flex-col w-full items-center">
-      <div className="my-5">Empowering Learning with the Best</div>
-      <div className="text-4xl font-bold my-5 text-center">P.E.M.H.P.S FACILITIES</div>
+      <div className="my-5">{text.quote}</div>
+      <div className="text-4xl font-bold my-5 text-center">{text.heading}</div>
       <div className="flex flex-col md:flex-row flex-wrap justify-center">
         <FacilityItems
           img={"computerLab.png"}
-          title={"Innovative Computer Lab"}
+          title={text.card["1"].head}
           description={
-            "Equipped with the latest technology, our computer lab provides students with hands-on experience in coding, research, and digital learning."
+            text.card["1"].body
           }
         />
 
         <FacilityItems
           img={"chemistryLab.png"}
-          title={"Exploratory Chemistry Lab"}
+          title={text.card["2"].head}
           description={
-            "Our well-equipped chemistry lab allows students to conduct experiments and explore the fascinating world of science with safety and precision."
+            text.card["2"].body
           }
         />
 
         <FacilityItems
           img={"playground.png"}
-          title={"Active Playground"}
+          title={text.card["3"].head}
           description={
-            "A vast and safe space where students engage in physical activities, develop teamwork, and enjoy outdoor sports."
+            text.card["3"].body
           }
         />
 
         <FacilityItems
           img={"sportsCoaching.png"}
-          title={"Professional Sports Coaching"}
+          title={text.card["4"].head}
           description={
-            "Dedicated coaching programs help students excel in various sports, fostering discipline, teamwork, and a competitive spirit."
+            text.card["4"].body
           }
         />
 
         <FacilityItems
           img={"bus.png"}
-          title={"Safe and Reliable Transport"}
+          title={text.card["5"].head}
           description={
-            "Our fleet of school buses ensures safe and comfortable transportation for students, covering key routes across the city."
+            text.card["5"].body
           }
         />
 
         <FacilityItems
           img={"midDayMeal.png"}
-          title={"Nutritious Mid-Day Meals"}
+          title={text.card["6"].head}
           description={
-            "Freshly prepared, balanced meals are provided to ensure students stay energized and focused throughout the day."
+            text.card["6"].body
           }
         />
       </div>

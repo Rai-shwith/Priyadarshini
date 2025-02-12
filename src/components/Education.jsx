@@ -1,38 +1,41 @@
 import React from "react";
 import EducationItems from "./EducationItems";
+import { useLanguage } from "../context/LanguageContext";
 
 const Education = () => {
+const text = useLanguage().text.EducationSection;
+
   return (
     <div className="flex flex-col w-full items-center">
-      <div className="my-5">Your First Step to Excellence</div>
-      <div className="text-4xl font-bold my-5 text-center">P.E.M.H.P.S EDUCATION</div>
+      <div className="my-5">{text.quote}</div>
+      <div className="text-4xl font-bold my-5 text-center">{text.heading}</div>
       <div className="flex flex-col md:flex-row">
         <EducationItems
           img={"prePrimary.png"}
-          title={"Joyful Pre-Primary Years"}
+          title={text.card["1"].head}
           description={
-            "With our fun school activities for pre-primary children, learning becomes interesting and enjoyable, and goes beyond textbooks and whiteboards. "
+            text.card["1"].body
           }
         />
         <EducationItems
           img={"primary.png"}
-          title={"Empowering Primary Years"}
+          title={text.card["2"].head}
           description={
-            "Primary curriculum is transacted in a joyful environment that empowers primary age children and develops their competencies. "
+            text.card["2"].body
           }
         />
         <EducationItems
           img={"middleSchool.png"}
-          title={"Inspiring Middle Years"}
+          title={text.card["3"].head}
           description={
-            "The school creates a stimulating learning environment that supports and challenges the individual student."
+            text.card["3"].body
           }
         />
         <EducationItems
           img={"highSchool.png"}
-          title={"Victorious Senior Years"}
+          title={text.card["4"].head}
           description={
-            "Senior years are a time for our students to learn valuable skills for life from our professional teachers These years are the time to set some long term goals."
+            text.card["4"].body
           }
         />
       </div>
