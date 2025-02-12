@@ -63,13 +63,13 @@ const NavItem = ({ items }) => {
             <div className="flex flex-col gap-4 z-50 absolute  right-5 bg-white p-4 rounded-lg shadow-md">
               {items.map((item) => {
                 return (
-                  <a
-                    href={item.link}
+                  <Link
+                    to={item.link}
                     key={item.value}
                     className="appearance-none"
                   >
                     {item.value}
-                  </a>
+                  </Link>
                 );
               })}
             </div>
