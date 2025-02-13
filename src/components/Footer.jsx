@@ -89,6 +89,18 @@ const Footer = () => {
         <div className="text-center text-gray-500 text-sm mt-6">
           &copy; {new Date().getFullYear()} Priyadarshini English Medium School.
           All Rights Reserved.
+          <p className="mt-2 mx-5 text-gray-400">
+              Website built by{" "}
+              <a
+                href="https://ashwithrai.me"
+                className="underline hover:text-white"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Ashwith Rai 2021 batch
+              </a>
+              , an alumnus of this school.
+            </p>
         </div>
       </div>
     </footer>
