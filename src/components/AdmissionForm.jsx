@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNotification } from "../context/NotificationContext";
+import { useLanguage } from "../context/LanguageContext";
 
 
 const AdmissionForm = () => {
+  const text = useLanguage().text.AdmissionPage;
   const { triggerNotification } = useNotification();
   const [loading, setLoading] = useState(false);
   const {
@@ -46,12 +48,12 @@ const AdmissionForm = () => {
   return (
     <div className="w-11/12 drop-shadow-lg bg-white shadow-lg rounded-lg p-6 my-6">
       <h2 className="text-2xl font-bold mb-4 text-center">
-        School Admission Form
+        {text.heading}
       </h2>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         {/* Student Details */}
         <div>
-          <label className="block font-medium">Student Name</label>
+          <label className="block font-medium">{text.studentName}</label>
           <input
             {...register("studentName", { required: "Name is required" })}
             type="text"
@@ -64,7 +66,7 @@ const AdmissionForm = () => {
 
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block font-medium">Date of Birth</label>
+            <label className="block font-medium">{text.dob}</label>
             <input
               {...register("dob", { required: "DOB is required" })}
               type="date"
@@ -76,7 +78,7 @@ const AdmissionForm = () => {
           </div>
 
           <div>
-            <label className="block font-medium">Gender</label>
+            <label className="block font-medium">{text.gender}</label>
             <select
               {...register("gender", { required: "Gender is required" })}
               className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-400"
@@ -93,10 +95,10 @@ const AdmissionForm = () => {
         </div>
 
         {/* Parent/Guardian Details */}
-        <h3 className="text-lg font-semibold mt-4">Parent/Guardian Details</h3>
+        <h3 className="text-lg font-semibold mt-4">{text.parentsDetails}</h3>
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block font-medium">Father's Name</label>
+            <label className="block font-medium">{text.fatherName}</label>
             <input
               {...register("fatherName", {
                 required: "Father's Name is required",
@@ -107,7 +109,7 @@ const AdmissionForm = () => {
           </div>
 
           <div>
-            <label className="block font-medium">Father's Contact</label>
+            <label className="block font-medium">{text.fatherContact}</label>
             <input
               {...register("fatherContact", {
                 required: "Contact is required",
@@ -125,7 +127,7 @@ const AdmissionForm = () => {
 
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block font-medium">Mother's Name</label>
+            <label className="block font-medium">{text.motherName}</label>
             <input
               {...register("motherName")}
               type="text"
@@ -134,7 +136,7 @@ const AdmissionForm = () => {
           </div>
 
           <div>
-            <label className="block font-medium">Mother's Contact</label>
+            <label className="block font-medium">{text.motherContact}</label>
             <input
               {...register("motherContact")}
               type="tel"
@@ -143,7 +145,7 @@ const AdmissionForm = () => {
           </div>
 
           <div>
-            <label className="block font-medium">Email</label>
+            <label className="block font-medium">{text.email}</label>
             <input
               {...register("email")}
               type="email"
@@ -153,9 +155,9 @@ const AdmissionForm = () => {
         </div>
 
         {/* Address Section */}
-        <h3 className="text-lg font-semibold mt-4">Address Details</h3>
+        <h3 className="text-lg font-semibold mt-4">{text.addressDetails}</h3>
         <div>
-          <label className="block font-medium">Residential Address</label>
+          <label className="block font-medium">{text.address}</label>
           <textarea
             {...register("address", { required: "Address is required" })}
             className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-400"
@@ -167,14 +169,14 @@ const AdmissionForm = () => {
 
         {/* Admission Information */}
 
-        <h3 className="text-lg font-semibold mt-4">Admission Information</h3>
+        <h3 className="text-lg font-semibold mt-4">{text.admissionInfo}</h3>
         <div>
-          <label className="block font-medium">Applying for Grade</label>
+          <label className="block font-medium">{text.applyingGrade}</label>
           <select
             {...register("grade", { required: "Select a grade" })}
             className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-400"
           >
-            <option value="">Select Grade</option>
+            <option value="">{text.selectGrade}</option>
             {[..."LKG UKG 1 2 3 4 5 6 7 8 9 10".split(" ")].map((grade) => (
               <option key={grade} value={grade}>
                 {grade}
@@ -188,7 +190,7 @@ const AdmissionForm = () => {
 
         {/* Previous School Name */}
         <div>
-          <label className="block font-medium">Previous School Name</label>
+          <label className="block font-medium">{text.previousSchoolName}</label>
           <input
             {...register("previousSchoolName")}
             type="text"
@@ -226,7 +228,7 @@ const AdmissionForm = () => {
             type="checkbox"
             className="w-5 h-5"
           />
-          <label className="ml-2">I agree to the terms and conditions</label>
+          <label className="ml-2">{text.tac}</label>
         </div>
         {errors.agreement && (
           <p className="text-red-500 text-sm">{errors.agreement.message}</p>
@@ -236,7 +238,7 @@ const AdmissionForm = () => {
             type="submit"
             className={`w-full md:w-fit  bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 ${loading? 'cursor-not-allowed opacity-50': ''}`}
           >
-            {loading ? "Submitting..." : "Submit Application"}
+            {loading ? text.submitting : text.submit}
           </button>
         </div>
       </form>

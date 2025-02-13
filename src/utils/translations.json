@@ -74,6 +74,27 @@
     },
     "ContactSection": {
       "heading": "Contact Us"
+    },
+    "AdmissionPage": {
+      "heading": "School Admission Form",
+      "studentName": "Student Name",
+      "dob": "Date of Birth",
+      "gender": "Gender",
+      "ParentDetails": "Parent/Guardian Details",
+      "fatherName": "Father's Name",
+      "fatherContact": "Father's Contact",
+      "motherName": "Mother's Name",
+      "motherContact": "Mother's Contact",
+      "email": "Email",
+      "addressDetails": "Address Details",
+      "address": "Residential Address",
+      "admissionInfo": "Admission Information",
+      "applyingGrade": "Applying for Grade",
+      "selectGrade": "Select Grade",
+      "previousSchoolName": "Previous School Name",
+      "tac": "I agree to the terms and conditions",
+      "submit": "Submit Application",
+      "submitting":"Submitting..."
     }
   },
   "kn": {
@@ -151,6 +172,27 @@
     },
     "ContactSection": {
       "heading": "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ"
+    },
+    "AdmissionPage": {
+      "heading": "ಶಾಲಾ ಪ್ರವೇಶ ಅರ್ಜಿ",
+      "studentName": "ವಿದ್ಯಾರ್ಥಿಯ ಹೆಸರು",
+      "dob": "ಜನ್ಮ ದಿನಾಂಕ",
+      "gender": "ಲಿಂಗ",
+      "ParentDetails": "ಪೋಷಕರ / ಪಾಲಕರ ವಿವರಗಳು",
+      "fatherName": "ತಂದೆಯ ಹೆಸರು",
+      "fatherContact": "ತಂದೆಯ ಸಂಪರ್ಕ ಸಂಖ್ಯೆ",
+      "motherName": "ತಾಯಿಯ ಹೆಸರು",
+      "motherContact": "ತಾಯಿಯ ಸಂಪರ್ಕ ಸಂಖ್ಯೆ",
+      "email": "ಇಮೇಲ್",
+      "addressDetails": "ವಿಳಾಸ ವಿವರಗಳು",
+      "address": "ನಿವಾಸ ವಿಳಾಸ",
+      "admissionInfo": "ಪ್ರವೇಶ ಮಾಹಿತಿ",
+      "applyingGrade": "ಯಾವ ತರಗತಿಗೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಲಾಗುತ್ತಿದೆ",
+      "selectGrade": "ತರಗತಿ ಆಯ್ಕೆಮಾಡಿ",
+      "previousSchoolName": "ಹಿಂದಿನ ಶಾಲೆಯ ಹೆಸರು",
+      "tac": "ನಾನು ನಿಯಮ ಮತ್ತು ಶರತ್ಗಳನ್ನು ಒಪ್ಪಿಕೊಳ್ಳುತ್ತೇನೆ",
+      "submit": "ಅರ್ಜಿಯನ್ನು ಸಲ್ಲಿಸಿ",
+      "submitting": "ಸಲ್ಲಿಸಲಾಗುತ್ತಿದೆ..."
     }
   }
 }
