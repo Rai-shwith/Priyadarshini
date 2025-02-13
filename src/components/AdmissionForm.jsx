@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNotification } from "../context/NotificationContext";
 import { useLanguage } from "../context/LanguageContext";
-
+import ReCAPTCHA from "react-google-recaptcha";
 
 const AdmissionForm = () => {
+  const recaptchaRef = useRef(null);
   const text = useLanguage().text.AdmissionPage;
   const { triggerNotification } = useNotification();
   const [loading, setLoading] = useState(false);
@@ -18,27 +19,52 @@ const AdmissionForm = () => {
   const onSubmit = async (data) => {
     try {
       setLoading(true);
+      const captchaToken = recaptchaRef.current.getValue(); // Get reCAPTCHA token
+      if (!captchaToken) {
+        triggerNotification("error", new Error("CAPTCHA verification failed!"));
+        setLoading(false);
+        return;
+      }
       const form = new FormData();
 
       Object.keys(data).forEach((key) => {
         form.append(key, data[key]);
       });
+      form.append("g-recaptcha-response", captchaToken); // Add the reCaptcha token to the form data
 
-      const response = await fetch("https://script.google.com/macros/s/AKfycby9kqx0JRUnHwEH5ctY0TPgFPc2iEcr-4MCuf82CZWg-49tzPJLlorkZ6IpVbwmr19-JA/exec", {
-        method: "POST",
-        body: form,
-      });
-      const result = await response.json()
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbzxxPSPUiLsk3ATwnFmHpuGwbsQayvOU1YNZ1c01uRFuQnQeIBPEXOknqOKmpTUrqwKAw/exec",
+        {
+          method: "POST",
+          body: form,
+        }
+      );
+      const result = await response.json();
       if (result.status != "Success") {
-        triggerNotification('error', (new Error('There was an error sending the message!')));
+        console.log(result.message);
+        if (result.message === "CAPTCHA verification failed") {
+          console.error("CAPTCHA verification failed");
+          return triggerNotification(
+            "error",
+            new Error("CAPTCHA verification failed!")
+          );
+        }
+        triggerNotification(
+          "error",
+          new Error("There was an error sending the message!")
+        );
         throw new Error("Failed to submit form");
       }
+
       console.log("Form successfully submitted:", data);
-      triggerNotification('success', 'Message successfully sent!');
+      triggerNotification("success", "Message successfully sent!");
       reset(); // Clears all input fields
-  
+      recaptchaRef.current.reset(); // Reset CAPTCHA
     } catch (error) {
-      triggerNotification('error', (new Error('There was an error sending the message!')));
+      triggerNotification(
+        "error",
+        new Error("There was an error sending the message!")
+      );
       console.error("Error submitting form:", error);
     } finally {
       setLoading(false);
@@ -47,9 +73,7 @@ const AdmissionForm = () => {
 
   return (
     <div className="w-11/12 drop-shadow-lg bg-white shadow-lg rounded-lg p-6 my-6">
-      <h2 className="text-2xl font-bold mb-4 text-center">
-        {text.heading}
-      </h2>
+      <h2 className="text-2xl font-bold mb-4 text-center">{text.heading}</h2>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         {/* Student Details */}
         <div>
@@ -233,10 +257,17 @@ const AdmissionForm = () => {
         {errors.agreement && (
           <p className="text-red-500 text-sm">{errors.agreement.message}</p>
         )}
+        <ReCAPTCHA
+        className="flex justify-center md:justify-start"
+          sitekey="6Ld1ItYqAAAAAEj3z-cMbbNQJqFmxVXCpFkn-_iC"
+          ref={recaptchaRef}
+        />
         <div className="w-full flex justify-center items-center">
           <button
             type="submit"
-            className={`w-full md:w-fit  bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 ${loading? 'cursor-not-allowed opacity-50': ''}`}
+            className={`w-full md:w-fit  bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 ${
+              loading ? "cursor-not-allowed opacity-50" : ""
+            }`}
           >
             {loading ? text.submitting : text.submit}
           </button>
