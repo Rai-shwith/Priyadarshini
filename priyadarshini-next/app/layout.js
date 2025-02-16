@@ -19,6 +19,9 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Priyadarshini English Medium School",
+  icons: {
+    icon: "/images/logo.png",
+  },
   description:
     "The mission of P.E.M.H.P.S is to create a better future for all children. We achieve this by maximizing opportunities for children through holistic, values-based education of the highest quality and through initiatives that promote unity and meaningful social action for development.",
 };

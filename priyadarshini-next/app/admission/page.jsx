@@ -1,8 +1,8 @@
 "use client"
 import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
-import { useNotification } from "../context/NotificationContext";
-import { useLanguage } from "../context/LanguageContext";
+import { useNotification } from "@/context/NotificationContext";
+import { useLanguage } from "@/context/LanguageContext";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const AdmissionForm = () => {
@@ -73,12 +73,12 @@ const AdmissionForm = () => {
   };
 
   return (
-    <div className="w-11/12 drop-shadow-lg bg-white shadow-lg rounded-lg p-6 my-6">
+    <div className="w-11/12 drop-shadow-lg bg-white shadow-lg rounded-lg p-6 my-6 ">
       <h2 className="text-2xl font-bold mb-4 text-center">{text.heading}</h2>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         {/* Student Details */}
         <div>
-          <label className="block font-medium">{text.studentName}</label>
+          <label className="block font-semibold">{text.studentName}</label>
           <input
             {...register("studentName", { required: "Name is required" })}
             type="text"
@@ -91,7 +91,7 @@ const AdmissionForm = () => {
 
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block font-medium">{text.dob}</label>
+            <label className="block font-semibold">{text.dob}</label>
             <input
               {...register("dob", { required: "DOB is required" })}
               type="date"
@@ -103,7 +103,7 @@ const AdmissionForm = () => {
           </div>
 
           <div>
-            <label className="block font-medium">{text.gender}</label>
+            <label className="block font-semibold">{text.gender}</label>
             <select
               {...register("gender", { required: "Gender is required" })}
               className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-400"
@@ -123,7 +123,7 @@ const AdmissionForm = () => {
         <h3 className="text-lg font-semibold mt-4">{text.parentsDetails}</h3>
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block font-medium">{text.fatherName}</label>
+            <label className="block font-semibold">{text.fatherName}</label>
             <input
               {...register("fatherName", {
                 required: "Father's Name is required",
@@ -134,7 +134,7 @@ const AdmissionForm = () => {
           </div>
 
           <div>
-            <label className="block font-medium">{text.fatherContact}</label>
+            <label className="block font-semibold">{text.fatherContact}</label>
             <input
               {...register("fatherContact", {
                 required: "Contact is required",
@@ -152,7 +152,7 @@ const AdmissionForm = () => {
 
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block font-medium">{text.motherName}</label>
+            <label className="block font-semibold">{text.motherName}</label>
             <input
               {...register("motherName")}
               type="text"
@@ -161,7 +161,7 @@ const AdmissionForm = () => {
           </div>
 
           <div>
-            <label className="block font-medium">{text.motherContact}</label>
+            <label className="block font-semibold">{text.motherContact}</label>
             <input
               {...register("motherContact")}
               type="tel"
@@ -170,7 +170,7 @@ const AdmissionForm = () => {
           </div>
 
           <div>
-            <label className="block font-medium">{text.email}</label>
+            <label className="block font-semibold">{text.email}</label>
             <input
               {...register("email")}
               type="email"
@@ -182,7 +182,7 @@ const AdmissionForm = () => {
         {/* Address Section */}
         <h3 className="text-lg font-semibold mt-4">{text.addressDetails}</h3>
         <div>
-          <label className="block font-medium">{text.address}</label>
+          <label className="block font-semibold">{text.address}</label>
           <textarea
             {...register("address", { required: "Address is required" })}
             className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-400"
@@ -196,7 +196,7 @@ const AdmissionForm = () => {
 
         <h3 className="text-lg font-semibold mt-4">{text.admissionInfo}</h3>
         <div>
-          <label className="block font-medium">{text.applyingGrade}</label>
+          <label className="block font-semibold">{text.applyingGrade}</label>
           <select
             {...register("grade", { required: "Select a grade" })}
             className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-400"
@@ -215,7 +215,7 @@ const AdmissionForm = () => {
 
         {/* Previous School Name */}
         <div>
-          <label className="block font-medium">{text.previousSchoolName}</label>
+          <label className="block font-semibold">{text.previousSchoolName}</label>
           <input
             {...register("previousSchoolName")}
             type="text"
@@ -226,7 +226,7 @@ const AdmissionForm = () => {
         {/* Upload Documents */}
         {/* <h3 className="text-lg font-semibold mt-4">Upload Documents</h3>
         <div>
-          <label className="block font-medium">
+          <label className="block font-semibold">
             Birth Certificate (PDF/Image)
           </label>
           <input
