@@ -6,7 +6,7 @@ const Education = ({text}) => {
     <div className="flex flex-col w-full items-center">
       <div className="my-5">{text.quote}</div>
       <div className="text-4xl font-bold my-5 text-center">{text.heading}</div>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row mx-auto">
         <EducationItems
           img={"prePrimary.png"}
           title={text.card["1"].head}
