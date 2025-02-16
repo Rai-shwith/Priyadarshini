@@ -13,7 +13,7 @@ const EducationItems = ({ img, title, description }) => {
            (max-width: 1200px) 33vw,
            25vw"
           alt={title}
-          className="w-full bg-red-800 rounded"
+          className="w-full rounded"
         />
       </div>
       <h3 className="text-2xl text-left font-bold mt-4">{title}</h3>
