@@ -1,10 +1,7 @@
-"use client"
 import React from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import { useLanguage } from "../context/LanguageContext";
 
-const ContactUs = () => {
-  const text = useLanguage().text.ContactSection;
+const ContactUs = ({text}) => {
 
   return (
     <div className="mx-auto flex flex-col md:flex-row gap-5 w-11/12 mb-10 md:h-80">

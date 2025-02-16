@@ -1,11 +1,9 @@
-"use client"
 import React from "react";
 import SocialLinks from "./SocialIcons";
 import { useLanguage } from "../context/LanguageContext";
 import Link from "next/link";
 
-const HeroSection = () => {
-  const text = useLanguage().text.HeroSection;
+const HeroSection = ({text}) => {
   return (
     <div className="flex flex-col w-full">
       <div className="relative w-11/12 self-center md:w-3/4">

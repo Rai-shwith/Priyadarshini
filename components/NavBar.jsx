@@ -1,13 +1,10 @@
-"use client";
 import React from "react";
 import NavItem from "./NavItem";
 import { AiFillHome } from "react-icons/ai";
 import { FaInfoCircle, FaPhoneAlt, FaUserGraduate } from "react-icons/fa";
-import { useLanguage } from "../context/LanguageContext";
 import Image from "next/image";
 
-const NavBar = () => {
-  const { text } = useLanguage();
+const NavBar = ({text,language}) => {
 
   return (
     <div className="w-full h-20 px-6">
@@ -29,6 +26,7 @@ const NavBar = () => {
           </div>
         </div>
         <NavItem
+        language={language}
           items={[
             { link: "/", value: text.NavBar.home, icon: <AiFillHome /> },
             {

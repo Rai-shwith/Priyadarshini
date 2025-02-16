@@ -1,12 +1,10 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react';
-import { useLanguage } from '../context/LanguageContext';
 
-const NumberSection = () => {
+const NumberSection = ({text}) => {
   const [counts, setCounts] = useState({ students: 0, teachers: 0, result: 0, alumni: 0 });
   const sectionRef = useRef(null);
 
-  const text = useLanguage().text.NumberSection;
 
   useEffect(() => {
     const observer = new IntersectionObserver(

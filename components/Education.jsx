@@ -1,11 +1,7 @@
-"use client"
 import React from "react";
 import EducationItems from "./EducationItems";
-import { useLanguage } from "../context/LanguageContext";
 
-const Education = () => {
-const text = useLanguage().text.EducationSection;
-
+const Education = ({text}) => {
   return (
     <div className="flex flex-col w-full items-center">
       <div className="my-5">{text.quote}</div>

@@ -1,10 +1,8 @@
 "use client"
 import React from "react";
 import FacilityItems from "./FacilityItems";
-import { useLanguage } from "../context/LanguageContext";
 
-const Facilities = () => {
-  const text = useLanguage().text.FacilitySection;
+const Facilities = ({text}) => {
   return (
     <div className="flex flex-col w-full items-center">
       <div className="my-5">{text.quote}</div>
