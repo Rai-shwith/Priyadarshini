@@ -7,7 +7,7 @@ const Facilities = ({text}) => {
     <div className="flex flex-col w-full items-center">
       <div className="my-5">{text.quote}</div>
       <div className="text-4xl font-bold my-5 text-center">{text.heading}</div>
-      <div className="flex flex-col md:flex-row flex-wrap justify-center">
+      <div className="flex flex-col md:flex-row flex-wrap justify-center gap-x-2">
         <FacilityItems
           img={"computerLab.png"}
           title={text.card["1"].head}
