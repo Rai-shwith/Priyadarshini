@@ -1,0 +1,198 @@
+{
+  "en": {
+    "schoolName": "PRIYADARSHINI",
+    "NavBar": {
+      "home": "Home",
+      "aboutUs": "About",
+      "admission": "Admission",
+      "contact": "Contact"
+    },
+    "HeroSection": {
+      "school": "Priyadarshini School",
+      "mainLine": "Material, Human & Divine Education",
+      "para": "The mission of P.E.M.H.P.S is to create a better future for all children. We achieve this by maximizing opportunities for children through holistic, values-based education of the highest quality and through initiatives that promote unity and meaningful social action for development.",
+      "aboutUs": "About Us",
+      "onlineAdmission": "Online Admission"
+    },
+    "NumberSection": {
+      "1": "Students currently enrolled",
+      "2": "Teachers & Staff",
+      "3": "Result Percentage",
+      "4": "Alumni"
+    },
+    "EducationSection": {
+      "quote": "Your First Step to Excellence",
+      "heading": "P.E.M.H.P.S EDUCATION",
+      "card": {
+        "1": {
+          "head": "Joyful Pre-Primary Years",
+          "body": "With our fun school activities for pre-primary children, learning becomes interesting and enjoyable, and goes beyond textbooks and whiteboards."
+        },
+        "2": {
+          "head": "Empowering Primary Years",
+          "body": "Primary curriculum is transacted in a joyful environment that empowers primary age children and develops their competencies."
+        },
+        "3": {
+          "head": "Inspiring Middle Years",
+          "body": "The school creates a stimulating learning environment that supports and challenges the individual student."
+        },
+        "4": {
+          "head": "Victorious Senior Years",
+          "body": "Senior years are a time for our students to learn valuable skills for life from our professional teachers. These years are the time to set some long-term goals."
+        }
+      }
+    },
+    "FacilitySection": {
+      "quote": "Empowering Learning with the Best",
+      "heading": "P.E.M.H.P.S FACILITIES",
+      "card": {
+        "1": {
+          "head": "Innovative Computer Lab",
+          "body": "Equipped with the latest technology, our computer lab provides students with hands-on experience in coding, research, and digital learning."
+        },
+        "2": {
+          "head": "Exploratory Chemistry Lab",
+          "body": "Our well-equipped chemistry lab allows students to conduct experiments and explore the fascinating world of science with safety and precision."
+        },
+        "3": {
+          "head": "Active Playground",
+          "body": "A vast and safe space where students engage in physical activities, develop teamwork, and enjoy outdoor sports."
+        },
+        "4": {
+          "head": "Professional Sports Coaching",
+          "body": "Dedicated coaching programs help students excel in various sports, fostering discipline, teamwork, and a competitive spirit."
+        },
+        "5": {
+          "head": "Safe and Reliable Transport",
+          "body": "Our fleet of school buses ensures safe and comfortable transportation for students, covering key routes across the city."
+        },
+        "6": {
+          "head": "Nutritious Mid-Day Meals",
+          "body": "Freshly prepared, balanced meals are provided to ensure students stay energized and focused throughout the day."
+        }
+      }
+    },
+    "ContactSection": {
+      "heading": "Contact Us"
+    },
+    "AdmissionPage": {
+      "heading": "School Admission Form",
+      "studentName": "Student Name",
+      "dob": "Date of Birth",
+      "gender": "Gender",
+      "ParentDetails": "Parent/Guardian Details",
+      "fatherName": "Father's Name",
+      "fatherContact": "Father's Contact",
+      "motherName": "Mother's Name",
+      "motherContact": "Mother's Contact",
+      "email": "Email",
+      "addressDetails": "Address Details",
+      "address": "Residential Address",
+      "admissionInfo": "Admission Information",
+      "applyingGrade": "Applying for Grade",
+      "selectGrade": "Select Grade",
+      "previousSchoolName": "Previous School Name",
+      "tac": "I agree to the terms and conditions",
+      "submit": "Submit Application",
+      "submitting":"Submitting..."
+    }
+  },
+  "kn": {
+    "schoolName": "ಪ್ರಿಯದರ್ಶಿನಿ",
+    "NavBar": {
+      "home": "ಮುಖಪುಟ",
+      "aboutUs": "ನಮ್ಮ ಬಗ್ಗೆ",
+      "admission": "ಪ್ರವೇಶ",
+      "contact": "ಸಂಪರ್ಕ"
+    },
+    "HeroSection": {
+      "school": "ಪ್ರಿಯದರ್ಶಿನಿ ಶಾಲೆ",
+      "mainLine": "ಭೌತಿಕ, ಮಾನವ ಮತ್ತು ದಿವ್ಯ ಶಿಕ್ಷಣ",
+      "para": "P.E.M.H.P.S ಯ ಉದ್ದೇಶ ಎಲ್ಲಾ ಮಕ್ಕಳಿಗೆ ಉತ್ತಮ ಭವಿಷ್ಯವನ್ನು ರೂಪಿಸುವುದು. ನಾವು ಇದನ್ನು ಅತ್ಯುತ್ತಮ ಗುಣಮಟ್ಟದ ಸಮಗ್ರ, ಮೌಲ್ಯಾಧಾರಿತ ಶಿಕ್ಷಣದ ಮೂಲಕ ಮತ್ತು ಏಕತೆ ಮತ್ತು ಸಮಾಜಮುಖಿ ಪ್ರಜ್ಞೆಯನ್ನು ಉತ್ತೇಜಿಸುವ ಉದ್ದೇಶಿತ ಕಾರ್ಯಗಳ ಮೂಲಕ ಸಾಧಿಸುತ್ತೇವೆ.",
+      "aboutUs": "ನಮ್ಮ ಬಗ್ಗೆ",
+      "onlineAdmission": "ಆನ್ಲೈನ್ ಪ್ರವೇಶ"
+    },
+    "NumberSection": {
+      "1": "ಪ್ರಸ್ತುತ ಪ್ರವೇಶಿತ ವಿದ್ಯಾರ್ಥಿಗಳು",
+      "2": "ಶಿಕ್ಷಕರು ಮತ್ತು ಸಿಬ್ಬಂದಿ",
+      "3": "ಫಲಿತಾಂಶ ಶೇಕಡಾವಾರು",
+      "4": "ಹಳೆಯ ವಿದ್ಯಾರ್ಥಿಗಳು"
+    },
+    "EducationSection": {
+      "quote": "ನಿಮ್ಮ ಮೆಚ್ಚಿನ ಪಯಣದ ಮೊದಲ ಹೆಜ್ಜೆ",
+      "heading": "P.E.M.H.P.S ಶಿಕ್ಷಣ",
+      "card": {
+        "1": {
+          "head": "ಆನಂದದ ಪ್ರಾಥಮಿಕ ಶಿಕ್ಷಣ",
+          "body": "ನಮ್ಮ ಪ್ರಾಥಮಿಕ ಮಕ್ಕಳಿಗಾಗಿ ಚಟುವಟಿಕೆಗಳು ಕಲಿಕೆಯನ್ನು ಆಕರ್ಷಕ ಮತ್ತು ಸಂತೋಷಕರವಾಗಿಸುತ್ತವೆ, ಪಾಠಪುಸ್ತಕಗಳ ಮತ್ತು ಬೋರ್ಡುಗಳ ಅತೀತವಾಗಿರುತ್ತವೆ."
+        },
+        "2": {
+          "head": "ಸಬಲ ಪ್ರಾಥಮಿಕ ಹಂತ",
+          "body": "ಪ್ರಾಥಮಿಕ ಪಠ್ಯಕ್ರಮವು ಸಂತೋಷಕರ ಪರಿಸರದಲ್ಲಿ ಮಾಡಲಾಗುತ್ತದೆ, ಇದು ಮಕ್ಕಳನ್ನು ಶಕ್ತಿಶಾಲಿಯನ್ನಾಗಿ ಮಾಡುತ್ತದೆ ಮತ್ತು ಅವರ ಕೌಶಲ್ಯಗಳನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸುತ್ತದೆ."
+        },
+        "3": {
+          "head": "ಪ್ರೇರಣಾದಾಯಕ ಮಧ್ಯಮ ಹಂತ",
+          "body": "ಶಾಲೆಯು ಪ್ರತಿ ವಿದ್ಯಾರ್ಥಿಯ ಬುದ್ಧಿಮತ್ತೆಯನ್ನು ಬೆಳೆಸುವ ಮತ್ತು ಸವಾಲುಗಳನ್ನು ಒಡ್ಡುವ ಚೇತನ ಕಲಿಕಾ ಪರಿಸರವನ್ನು ಒದಗಿಸುತ್ತದೆ."
+        },
+        "4": {
+          "head": "ವಿಜಯಶಾಲಿ ಹಿರಿಯ ಹಂತ",
+          "body": "ಹಿರಿಯ ಹಂತಗಳಲ್ಲಿ ವಿದ್ಯಾರ್ಥಿಗಳು ಪ್ರೌಢ ಶಿಕ್ಷಣ ಮತ್ತು ಪ್ರಪಂಚದಲ್ಲಿ ಮುನ್ನಡೆ ಸಾಧಿಸಲು ಅಗತ್ಯವಿರುವ ಕೌಶಲ್ಯಗಳನ್ನು ಕಲಿಯುತ್ತಾರೆ."
+        }
+      }
+    },
+    "FacilitySection": {
+      "quote": "ಉತ್ತಮ ಕಲಿಕೆಯ ಅನುಭವ",
+      "heading": "P.E.M.H.P.S ಸೌಲಭ್ಯಗಳು",
+      "card": {
+        "1": {
+          "head": "ನಾವೀನ್ಯತೆ ಕಂಪ್ಯೂಟರ್ ಲ್ಯಾಬ್",
+          "body": "ಅತ್ಯಾಧುನಿಕ ತಂತ್ರಜ್ಞಾನವನ್ನು ಒಳಗೊಂಡು, ನಮ್ಮ ಕಂಪ್ಯೂಟರ್ ಲ್ಯಾಬ್ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಕೋಡಿಂಗ್, ಸಂಶೋಧನೆ, ಮತ್ತು ಡಿಜಿಟಲ್ ಕಲಿಕೆಯ ಅನುಭವವನ್ನು ಒದಗಿಸುತ್ತದೆ."
+        },
+        "2": {
+          "head": "ಆನ್ವೇಷಣಾ ರಸಾಯನಶಾಸ್ತ್ರ ಪ್ರಯೋಗಾಲಯ",
+          "body": "ನಮ್ಮ ಚೆನ್ನಾಗಿ ಸಜ್ಜಿತ ರಸಾಯನಶಾಸ್ತ್ರ ಪ್ರಯೋಗಾಲಯವು ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಸುರಕ್ಷಿತ ಮತ್ತು ಖಚಿತವಾದ ಪ್ರಯೋಗಗಳನ್ನು ನಡೆಸಲು ಅನುಮತಿಸುತ್ತದೆ."
+        },
+        "3": {
+          "head": "ಚಟುವಟಿಕೆಗಳ ಮೈದಾನ",
+          "body": "ವಿದ್ಯಾರ್ಥಿಗಳು ದೈಹಿಕ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ಪಾಲ್ಗೊಳ್ಳಲು, ತಂಡದ ಮನೋಭಾವ ಬೆಳೆಸಲು, ಮತ್ತು ಹೊರಾಂಗಣ ಆಟಗಳನ್ನು ಆನಂದಿಸಲು ಸುರಕ್ಷಿತ ಸ್ಥಳ."
+        },
+        "4": {
+          "head": "ಪ್ರೊಫೆಷನಲ್ ಕ್ರೀಡಾ ತರಬೇತಿ",
+          "body": "ನಿಗದಿತ ತರಬೇತಿ ಕಾರ್ಯಕ್ರಮಗಳು ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ವಿವಿಧ ಕ್ರೀಡೆಗಳಲ್ಲಿ ಮಿಂಚಲು ಸಹಾಯ ಮಾಡುತ್ತವೆ."
+        },
+        "5": {
+          "head": "ಸುರಕ್ಷಿತ ಮತ್ತು ನಂಬಲರ್ಹ ಸಾರಿಗೆ",
+          "body": "ನಮ್ಮ ಶಾಲಾ ಬಸ್‌ಗಳು ಮುಖ್ಯ ಮಾರ್ಗಗಳನ್ನು ಒಳಗೊಂಡಂತೆ ಸುರಕ್ಷಿತ ಪ್ರಯಾಣವನ್ನು ಒದಗಿಸುತ್ತವೆ."
+        },
+        "6": {
+          "head": "ಪೌಷ್ಟಿಕ ಮಧ್ಯಾನ್ನ ಊಟ",
+          "body": "ಹೊಸದಾಗಿ ತಯಾರಿಸಿದ ಸಮತೋಲನ ಆಹಾರವನ್ನು ಒದಗಿಸಲಾಗುತ್ತದೆ, ಇದರಿಂದ ವಿದ್ಯಾರ್ಥಿಗಳು ಉತ್ಸಾಹ ಮತ್ತು ಗಮನಶೀಲರಾಗಿರುತ್ತಾರೆ."
+        }
+      }
+    },
+    "ContactSection": {
+      "heading": "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ"
+    },
+    "AdmissionPage": {
+      "heading": "ಶಾಲಾ ಪ್ರವೇಶ ಅರ್ಜಿ",
+      "studentName": "ವಿದ್ಯಾರ್ಥಿಯ ಹೆಸರು",
+      "dob": "ಜನ್ಮ ದಿನಾಂಕ",
+      "gender": "ಲಿಂಗ",
+      "ParentDetails": "ಪೋಷಕರ / ಪಾಲಕರ ವಿವರಗಳು",
+      "fatherName": "ತಂದೆಯ ಹೆಸರು",
+      "fatherContact": "ತಂದೆಯ ಸಂಪರ್ಕ ಸಂಖ್ಯೆ",
+      "motherName": "ತಾಯಿಯ ಹೆಸರು",
+      "motherContact": "ತಾಯಿಯ ಸಂಪರ್ಕ ಸಂಖ್ಯೆ",
+      "email": "ಇಮೇಲ್",
+      "addressDetails": "ವಿಳಾಸ ವಿವರಗಳು",
+      "address": "ನಿವಾಸ ವಿಳಾಸ",
+      "admissionInfo": "ಪ್ರವೇಶ ಮಾಹಿತಿ",
+      "applyingGrade": "ಯಾವ ತರಗತಿಗೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಲಾಗುತ್ತಿದೆ",
+      "selectGrade": "ತರಗತಿ ಆಯ್ಕೆಮಾಡಿ",
+      "previousSchoolName": "ಹಿಂದಿನ ಶಾಲೆಯ ಹೆಸರು",
+      "tac": "ನಾನು ನಿಯಮ ಮತ್ತು ಶರತ್ಗಳನ್ನು ಒಪ್ಪಿಕೊಳ್ಳುತ್ತೇನೆ",
+      "submit": "ಅರ್ಜಿಯನ್ನು ಸಲ್ಲಿಸಿ",
+      "submitting": "ಸಲ್ಲಿಸಲಾಗುತ್ತಿದೆ..."
+    }
+  }
+}
