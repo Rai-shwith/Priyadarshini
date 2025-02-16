@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import DesktopLanguageSwitcher from "./DesktopLanguageSwitcher";
@@ -26,7 +26,7 @@ const NavItem = ({ items, language }) => {
   }, [showMenu]);
 
   return (
-    <div>
+    <div >
       <div className="hidden md:flex gap-16">
         {items.map((item) => {
           return (
@@ -48,7 +48,7 @@ const NavItem = ({ items, language }) => {
         <DesktopLanguageSwitcher language={language} />
       </div>
       {/* <div className="md:hidden relative"> */}
-      <div className="md:hidden relative top-5 flex flex-col items-end gap-5 right-8">
+      <div className="md:hidden relative top-5 flex flex-col items-end gap-5">
         {!showMenu ? (
           <button className="appearance-none" onClick={() => setShowMenu(true)}>
             <svg

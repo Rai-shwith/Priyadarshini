@@ -4,10 +4,9 @@ import { AiFillHome } from "react-icons/ai";
 import { FaInfoCircle, FaPhoneAlt, FaUserGraduate } from "react-icons/fa";
 import Image from "next/image";
 
-const NavBar = ({text,language}) => {
-
+const NavBar = ({ text, language }) => {
   return (
-    <div className="w-full h-20 px-6">
+    <div className="w-full h-20 px-6 mb-6">
       <div className="flex justify-between items-center h-full md:px-8 md:mx-8 rounded-2xl">
         <div className="flex items-center">
           <div className="w-24 min-h-20 relative">
@@ -21,12 +20,14 @@ const NavBar = ({text,language}) => {
               alt="logo"
             />
           </div>
-          <div className="font-semibold text-2xl md:text-6xl text-[#644a39]">
-            {text.schoolName}
+          <div className="relative inset-0">
+            <div className="absolute bottom-1/2 translate-y-1/2  font-semibold text-2xl md:text-6xl text-[#644a39]">
+              {text.schoolName}
+            </div>
           </div>
         </div>
         <NavItem
-        language={language}
+          language={language}
           items={[
             { link: "/", value: text.NavBar.home, icon: <AiFillHome /> },
             {

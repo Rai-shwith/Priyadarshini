@@ -17,7 +17,7 @@ const MobileLanguageSwitcher = ({ language }) => {
       <button
         onClick={() => {
             switchLanguage(
-                language !== "en" ? "kn":language
+                language === "en" ? "kn":"en"
             )
         }}
         className="flex gap-2 items-center"

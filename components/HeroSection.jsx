@@ -1,6 +1,5 @@
 import React from "react";
 import SocialLinks from "./SocialIcons";
-import { useLanguage } from "../context/LanguageContext";
 import Link from "next/link";
 
 const HeroSection = ({text}) => {

@@ -7,13 +7,13 @@ import NumberSection from "@/components/NumberSection";
 import { provideText } from "@/utils/provideText";
 
 export default async function Home({ searchParams }) {
-  const resolvedParams = await searchParams; 
+  const resolvedParams = await searchParams;
   const lang = resolvedParams?.lang || "kn"; // Now safely access it
   const languageData = await provideText(lang);
 
   return (
     <div className="">
-              <NavBar text={languageData} language={lang} />
+      <NavBar text={languageData} language={lang} />
       <HeroSection text={languageData["HeroSection"]} />
       <NumberSection text={languageData["NumberSection"]} />
       <Education text={languageData["EducationSection"]} />
