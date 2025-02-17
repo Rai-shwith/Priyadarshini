@@ -1,15 +1,24 @@
 "use client";
 
-import { TbLanguage } from "react-icons/tb";
+import { TbLanguage, TbLoader } from "react-icons/tb";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const DesktopLanguageSwitcher = ({ language }) => {
   const router = useRouter();
 
+  const [loading, setLoading] = useState(false);
+
   const switchLanguage = (lang) => {
+    setLoading(true);
     document.cookie = `lang=${lang}; path=/`; // Set language cookie
     router.refresh(); // Soft refresh to apply new language
+    // setLoading(false);
   };
+
+  useEffect(() => {
+    setLoading(false);
+  }, [language]); // Runs when "language" changes
 
   return (
     <div
@@ -21,8 +30,11 @@ const DesktopLanguageSwitcher = ({ language }) => {
         onClick={() => switchLanguage(language === "en" ? "kn" : "en")}
         className="cursor-pointer flex items-center gap-1"
       >
-        <TbLanguage />
-        <div className="">{language !== "en" ? "English" : "ಕನ್ನಡ"}</div>
+        {loading? <TbLoader />:<TbLanguage />}
+        
+        <div className="">
+          {loading ? "Switching..." : language !== "en" ? "English" : "ಕನ್ನಡ"}
+        </div>
       </button>
       {/* {isLangOpen && (
       <div className="absolute right-3 top-6 z-50 w-32 bg-white shadow-lg rounded-lg overflow-hidden">
