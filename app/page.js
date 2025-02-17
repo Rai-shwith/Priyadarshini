@@ -5,12 +5,13 @@ import HeroSection from "@/components/HeroSection";
 import NavBar from "@/components/NavBar";
 import NumberSection from "@/components/NumberSection";
 import { provideText } from "@/utils/provideText";
+import { cookies } from "next/headers";
 
-export default async function Home({ searchParams }) {
-  const resolvedParams = await searchParams;
-  const lang = resolvedParams?.lang || "kn"; // Now safely access it
+export default async function Home({ }) {
+  const cookieStore = cookies();
+  const lang = (await cookieStore).get("lang")?.value || "kn"; // Await the cookies
   const languageData = await provideText(lang);
-
+  
   return (
     <div className="">
       <NavBar text={languageData} language={lang} />

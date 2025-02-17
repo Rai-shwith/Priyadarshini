@@ -1,15 +1,14 @@
 "use client";
 
 import { TbLanguage } from "react-icons/tb";
-import { useSearchParams, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const DesktopLanguageSwitcher = ({ language }) => {
   const router = useRouter();
-  const searchParams = useSearchParams();
+
   const switchLanguage = (lang) => {
-    const newParams = new URLSearchParams(searchParams.toString());
-    newParams.set("lang", lang);
-    router.push(`?${newParams.toString()}`); // Triggers re-render
+    document.cookie = `lang=${lang}; path=/`; // Set language cookie
+    router.refresh(); // Soft refresh to apply new language
   };
 
   return (
