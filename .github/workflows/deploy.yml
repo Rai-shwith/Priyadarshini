@@ -3,7 +3,7 @@ name: Deploy Priyadarshini to GitHub Pages
 on:
   push:
     branches:
-      - main  
+      - react-backup  
 
 permissions:
   contents: read  # Required for actions/checkout
