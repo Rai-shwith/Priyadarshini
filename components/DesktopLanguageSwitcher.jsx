@@ -1,7 +1,6 @@
 "use client";
 
 import { TbLanguage } from "react-icons/tb";
-import { useSearchParams, useRouter } from "next/navigation";
 
 const DesktopLanguageSwitcher = ({ language }) => {
   // const router = useRouter();
