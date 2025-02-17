@@ -4,7 +4,7 @@ import Link from "next/link";
 import DesktopLanguageSwitcher from "./DesktopLanguageSwitcher";
 import MobileLanguageSwitcher from "./MobileLanguageSwitcher";
 
-const NavItem = ({ items, language }) => {
+const NavItem = ({ items, language, switchLanguage }) => {
   const [showMenu, setShowMenu] = useState(false);
   // const [isLangOpen, setIsLangOpen] = useState(false);
   const phoneMenuNav = useRef(null);
@@ -45,7 +45,7 @@ const NavItem = ({ items, language }) => {
           );
         })}
         {/* Desktop Dropdown */}
-        <DesktopLanguageSwitcher language={language} />
+        <DesktopLanguageSwitcher language={language} switchLanguage = {switchLanguage} />
       </div>
       {/* <div className="md:hidden relative"> */}
       <div className="md:hidden relative top-5 flex flex-col items-end gap-5">
@@ -106,7 +106,7 @@ const NavItem = ({ items, language }) => {
             </div>
           </div>
         )}
-        <MobileLanguageSwitcher language={language} />
+        <MobileLanguageSwitcher language={language} switchLanguage = {switchLanguage}/>
       </div>
     </div>
   );

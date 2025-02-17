@@ -4,13 +4,13 @@ import { TbLanguage } from "react-icons/tb";
 import { useSearchParams, useRouter } from "next/navigation";
 
 const DesktopLanguageSwitcher = ({ language }) => {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const switchLanguage = (lang) => {
-    const newParams = new URLSearchParams(searchParams.toString());
-    newParams.set("lang", lang);
-    router.push(`?${newParams.toString()}`); // Triggers re-render
-  };
+  // const router = useRouter();
+  // const searchParams = useSearchParams();
+  // const switchLanguage = (lang) => {
+  //   const newParams = new URLSearchParams(searchParams.toString());
+  //   newParams.set("lang", lang);
+  //   router.push(`?${newParams.toString()}`); // Triggers re-render
+  // };
 
   return (
     <div

@@ -27,6 +27,7 @@ const NavBar = ({ text, language, switchLanguage }) => {
           </div>
         </div>
         <NavItem
+        switchLanguage = {switchLanguage}
           language={language}
           items={[
             { link: "/", value: text.NavBar.home, icon: <AiFillHome /> },
