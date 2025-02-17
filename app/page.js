@@ -6,11 +6,10 @@ import NavBar from "@/components/NavBar";
 import NumberSection from "@/components/NumberSection";
 import { LanguageProvider } from "@/context/LanguageProvider";
 
-export default async function Home() {
+export default function Home() {
 
   return (
     <LanguageProvider>
-      <NavBar />
       <HeroSection />
       <NumberSection />
       <Education />

@@ -5,6 +5,7 @@ import { FaInfoCircle, FaPhoneAlt, FaUserGraduate } from "react-icons/fa";
 import Image from "next/image";
 
 const NavBar = ({ text, language, switchLanguage }) => {
+  
   return (
     <div className="w-full h-20 px-6 mb-6">
       <div className="flex justify-between items-center h-full md:px-8 md:mx-8 rounded-2xl">
