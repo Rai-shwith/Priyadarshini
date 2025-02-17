@@ -2,8 +2,9 @@
 import { useState, useContext, useEffect } from "react";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import languageData from "@/utils/translations.json";
 
-export const LanguageProvider = ({ children,languageData }) => {
+export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState("kn");
 
   useEffect(() => {
@@ -22,10 +23,10 @@ export const LanguageProvider = ({ children,languageData }) => {
   const switchLanguage = (lang) => setLanguage(lang);
 
   const text = languageData[language];
-
+  console.log(text);
   return (
     <>
-    <NavBar text={text} language={language} switchLanguage={switchLanguage} />
+      <NavBar text={text} language={language} switchLanguage={switchLanguage} />
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
           ? React.cloneElement(child, { text })
