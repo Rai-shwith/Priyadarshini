@@ -3,7 +3,7 @@ import { provideText } from "@/utils/provideText";
 import Form from "./Form";
 import { cookies } from "next/headers";
 
-const AdmissionForm = async ({ searchParams }) => {
+const AdmissionForm = async () => {
   const cookieStore = cookies();
   const lang = (await cookieStore).get("lang")?.value || "kn"; // Await the cookies
   const languageData = await provideText(lang);

@@ -3,7 +3,7 @@ import { provideText } from "@/utils/provideText";
 import { cookies } from "next/headers";
 import React from "react";
 
-const ContactPage = async ({ searchParams }) => {
+const ContactPage = async () => {
   const cookieStore = cookies();
   const lang = (await cookieStore).get("lang")?.value || "kn"; // Await the cookies
   const languageData = await provideText(lang);
