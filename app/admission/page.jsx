@@ -1,11 +1,13 @@
 import NavBar from "@/components/NavBar";
 import { provideText } from "@/utils/provideText";
 import Form from "./Form";
+import { cookies } from "next/headers";
 
 const AdmissionForm = async ({ searchParams }) => {
-  const resolvedParams = await searchParams;
-  const lang = resolvedParams?.lang || "kn"; // Now safely access it
+  const cookieStore = cookies();
+  const lang = (await cookieStore).get("lang")?.value || "kn"; // Await the cookies
   const languageData = await provideText(lang);
+  
 
   return (
     <>

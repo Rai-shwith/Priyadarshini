@@ -7,7 +7,7 @@ import NumberSection from "@/components/NumberSection";
 import { provideText } from "@/utils/provideText";
 import { cookies } from "next/headers";
 
-export default async function Home({ }) {
+export default async function Home() {
   const cookieStore = cookies();
   const lang = (await cookieStore).get("lang")?.value || "kn"; // Await the cookies
   const languageData = await provideText(lang);
