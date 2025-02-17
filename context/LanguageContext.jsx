@@ -1,5 +1,5 @@
 "use client";
-import { createContext, useState, useContext, useEffect } from "react";
+`import { createContext, useState, useContext, useEffect } from "react";
 import languageData from "../utils/translations.json";
 
 const LanguageContext = createContext();
@@ -31,3 +31,4 @@ export const LanguageProvider = ({ children }) => {
 };
 
 export const useLanguage = () => useContext(LanguageContext);
+`
