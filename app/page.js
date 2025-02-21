@@ -1,3 +1,4 @@
+import Activities from "@/components/Activities";
 import ContactUs from "@/components/ContactUs";
 import Education from "@/components/Education";
 import Facilities from "@/components/Facilities";
@@ -19,6 +20,7 @@ export default async function Home() {
       <NumberSection text={languageData["NumberSection"]} />
       <Education text={languageData["EducationSection"]} />
       <Facilities text={languageData["FacilitySection"]} />
+      <Activities text={languageData["ActivitySection"]} />
       <ContactUs text={languageData["ContactSection"]} />
     </div>
   );

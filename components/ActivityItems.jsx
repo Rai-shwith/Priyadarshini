@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const FacilityItems = ({ img, title, description }) => {
+const ActivityItems = ({ img, title, description }) => {
   return (
     // <div className="w-full">
       <div className="flex flex-col bg-white p-5 rounded-lg shadow-lg w-11/12 mx-auto md:mx-0 m-5 md:w-1/4">
@@ -11,7 +11,7 @@ const FacilityItems = ({ img, title, description }) => {
            (max-width: 1200px) 33vw,
            25vw"
             fill
-            src={"/images/Facilities/" + img}
+            src={"/images/Activities/" + img}
             alt={title}
             className="w-full rounded"
           />
@@ -23,4 +23,4 @@ const FacilityItems = ({ img, title, description }) => {
   );
 };
 
-export default FacilityItems;
+export default ActivityItems;
