@@ -16,7 +16,7 @@ const FacilityItems = ({ img, title, description }) => {
             className="w-full rounded"
           />
         </div>
-        <h3 className="text-2xl text-left font-bold mt-4">{title}</h3>
+        <h3 className="text-2xl text-left md:text-center font-bold mt-4">{title}</h3>
         <p className="text-left opacity-50 mt-2 mb-5">{description}</p>
       </div>
     // </div>
