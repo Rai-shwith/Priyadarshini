@@ -1,9 +1,9 @@
 import NavBar from "@/components/NavBar";
 import { provideText } from "@/utils/provideText";
 import { cookies } from "next/headers";
-import React from "react";
+import ContactForm from "./ContactForm";
 
-const ContactPage = async () => {
+const AdmissionForm = async () => {
   const cookieStore = cookies();
   const lang = (await cookieStore).get("lang")?.value || "kn"; // Await the cookies
   const languageData = await provideText(lang);
@@ -11,12 +11,10 @@ const ContactPage = async () => {
 
   return (
     <>
-    <NavBar text={languageData} language={lang} />
-    <div className="min-h-[50vh] flex justify-center">
-      <h1 className="text-4xl font-bold text-center">This page is not yet built!</h1>
-    </div>
-  </>
+      <NavBar text={languageData} language={lang} />
+      <ContactForm text={languageData["ContactPage"]} />
+    </>
   );
 };
 
-export default ContactPage;
+export default AdmissionForm;

@@ -117,6 +117,33 @@
       "tac": "I agree to the terms and conditions",
       "submit": "Submit Application",
       "submitting": "Submitting..."
+    },
+    "ContactPage": {
+      "heading": "School Contact Form",
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "messageType": "Message Type",
+      "selectMessageType": "Select an option",
+      "general": "General Inquiry",
+      "admission": "Admission",
+      "fee": "Fee Structure",
+      "events": "Events",
+      "complaints": "Complaints",
+      "suggestions": "Suggestions",
+      "others": "Others",
+      "subject": "Subject",
+      "message": "Message",
+      "studentDetails": "Student Details (if applicable)",
+      "studentName": "Student's Name",
+      "grade": "Class",
+      "selectGrade": "Select class",
+      "contactMethod": "Preferred Contact Method",
+      "emailContact": "Email",
+      "phoneContact": "Phone",
+      "whatsappContact": "WhatsApp",
+      "submit": "Submit Application",
+      "submitting": "Submitting..."
     }
   },
   "kn": {
@@ -124,7 +151,7 @@
     "NavBar": {
       "home": "ಮುಖಪುಟ",
       "aboutUs": "ನಮ್ಮ ಬಗ್ಗೆ",
-      "admission": "ಪ್ರವೇಶ",
+      "admission": "ದಾಖಲಾತಿ",
       "contact": "ಸಂಪರ್ಕ"
     },
     "HeroSection": {
@@ -132,10 +159,10 @@
       "mainLine": "ಭೌತಿಕ, ಮಾನವ ಮತ್ತು ದಿವ್ಯ ಶಿಕ್ಷಣ",
       "para": "P.E.M.H.P.S ಯ ಉದ್ದೇಶ ಎಲ್ಲಾ ಮಕ್ಕಳಿಗೆ ಉತ್ತಮ ಭವಿಷ್ಯವನ್ನು ರೂಪಿಸುವುದು. ನಾವು ಇದನ್ನು ಅತ್ಯುತ್ತಮ ಗುಣಮಟ್ಟದ ಸಮಗ್ರ, ಮೌಲ್ಯಾಧಾರಿತ ಶಿಕ್ಷಣದ ಮೂಲಕ ಮತ್ತು ಏಕತೆ ಮತ್ತು ಸಮಾಜಮುಖಿ ಪ್ರಜ್ಞೆಯನ್ನು ಉತ್ತೇಜಿಸುವ ಉದ್ದೇಶಿತ ಕಾರ್ಯಗಳ ಮೂಲಕ ಸಾಧಿಸುತ್ತೇವೆ.",
       "aboutUs": "ನಮ್ಮ ಬಗ್ಗೆ",
-      "onlineAdmission": "ಆನ್ಲೈನ್ ಪ್ರವೇಶ"
+      "onlineAdmission": "ಆನ್ಲೈನ್ ದಾಖಲಾತಿ"
     },
     "NumberSection": {
-      "1": "ಪ್ರಸ್ತುತ ಪ್ರವೇಶಿತ ವಿದ್ಯಾರ್ಥಿಗಳು",
+      "1": "ಪ್ರಸ್ತುತ ದಾಖಲಾತಿಿತ ವಿದ್ಯಾರ್ಥಿಗಳು",
       "2": "ಶಿಕ್ಷಕರು ಮತ್ತು ಸಿಬ್ಬಂದಿ",
       "3": "ಫಲಿತಾಂಶ ಶೇಕಡಾವಾರು",
       "4": "ಹಳೆಯ ವಿದ್ಯಾರ್ಥಿಗಳು"
@@ -218,7 +245,7 @@
       "heading": "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ"
     },
     "AdmissionPage": {
-      "heading": "ಶಾಲಾ ಪ್ರವೇಶ ಅರ್ಜಿ",
+      "heading": "ಶಾಲಾ ದಾಖಲಾತಿ ಅರ್ಜಿ",
       "studentName": "ವಿದ್ಯಾರ್ಥಿಯ ಹೆಸರು",
       "dob": "ಜನ್ಮ ದಿನಾಂಕ",
       "gender": "ಲಿಂಗ",
@@ -230,11 +257,38 @@
       "email": "ಇಮೇಲ್",
       "addressDetails": "ವಿಳಾಸ ವಿವರಗಳು",
       "address": "ನಿವಾಸ ವಿಳಾಸ",
-      "admissionInfo": "ಪ್ರವೇಶ ಮಾಹಿತಿ",
+      "admissionInfo": "ದಾಖಲಾತಿ ಮಾಹಿತಿ",
       "applyingGrade": "ಯಾವ ತರಗತಿಗೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಲಾಗುತ್ತಿದೆ",
       "selectGrade": "ತರಗತಿ ಆಯ್ಕೆಮಾಡಿ",
       "previousSchoolName": "ಹಿಂದಿನ ಶಾಲೆಯ ಹೆಸರು",
       "tac": "ನಾನು ನಿಯಮ ಮತ್ತು ಶರತ್ಗಳನ್ನು ಒಪ್ಪಿಕೊಳ್ಳುತ್ತೇನೆ",
+      "submit": "ಅರ್ಜಿಯನ್ನು ಸಲ್ಲಿಸಿ",
+      "submitting": "ಸಲ್ಲಿಸಲಾಗುತ್ತಿದೆ..."
+    },
+    "ContactPage": {
+      "heading": "ಶಾಲಾ ಸಂಪರ್ಕ ಅರ್ಜಿ",
+      "fullName": "ಪೂರ್ಣ ಹೆಸರು",
+      "email": "ಇಮೇಲ್",
+      "phone": "ಫೋನ್ ಸಂಖ್ಯೆ",
+      "messageType": "ಸಂದೇಶದ ಪ್ರಕಾರ",
+      "selectMessageType": "ಆಯ್ಕೆಮಾಡಿ",
+      "general": "ಸಾಮಾನ್ಯ ವಿಚಾರಣೆ",
+      "admission": "ದಾಖಲಾತಿ",
+      "fee": "ಶುಲ್ಕದ  ಬಗ್ಗೆ",
+      "events": "ಕಾರ್ಯಕ್ರಮಗಳು",
+      "complaints": "ದೂರುಗಳು",
+      "suggestions": "ಸುಧಾರಣೆ ಸಲಹೆಗಳು",
+      "others": "ಇತರ",
+      "subject": "ವಿಷಯ",
+      "message": "ಸಂದೇಶ",
+      "studentDetails": "ವಿದ್ಯಾರ್ಥಿಯ ವಿವರಗಳು (ಅನ್ವಯಿಸಿದರೆ)",
+      "studentName": "ವಿದ್ಯಾರ್ಥಿಯ ಹೆಸರು",
+      "grade": "ತರಗತಿ",
+      "selectGrade": "ತರಗತಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+      "contactMethod": "ಆದ್ಯತೆಯ ಸಂಪರ್ಕ ವಿಧಾನ",
+      "emailContact": "ಇಮೇಲ್",
+      "phoneContact": "ಫೋನ್",
+      "whatsappContact": "ವಾಟ್ಸಪ್",
       "submit": "ಅರ್ಜಿಯನ್ನು ಸಲ್ಲಿಸಿ",
       "submitting": "ಸಲ್ಲಿಸಲಾಗುತ್ತಿದೆ..."
     }

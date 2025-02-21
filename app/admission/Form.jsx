@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { useNotification } from "@/context/NotificationContext";
 import ReCAPTCHA from "react-google-recaptcha";
 
-const Form =  ({ searchParams,text}) => {
+const Form =  ({text}) => {
   const recaptchaRef = useRef(null);
   const { triggerNotification } = useNotification();
   const [loading, setLoading] = useState(false);
