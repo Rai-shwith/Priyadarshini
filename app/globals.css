@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-kannada .school-name {
+    margin-bottom: -10px;
+}

@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        kannada: ["var(--font-baloo-tamma)", "sans-serif"],
+        english: ["var(--font-inter)", "sans-serif"],
+      },
       colors: {
         primary: "#1E40AF", // Custom primary blue
         secondary: "#F59E0B", // Custom secondary yellow

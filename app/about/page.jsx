@@ -6,14 +6,14 @@ import AboutUsPage from "./AboutUsPage";
 
 const AboutPage = async ({ text }) => {
   const cookieStore = cookies();
-  const lang = (await cookieStore).get("lang")?.value || "kn"; // Await the cookies
+  const lang = (await cookieStore).get("lang")?.value || "en"; // Await the cookies
   const languageData = await provideText(lang);
 
   return (
-    <>
+    <div className={`${lang === "en" ? "font-english" : "font-kannada"} w-full flex flex-col items-center`}>
       <NavBar text={languageData} language={lang} />
       <AboutUsPage text={languageData["AboutPage"]} />
-    </>
+    </div>
   );
 };
 export const metadata = {
