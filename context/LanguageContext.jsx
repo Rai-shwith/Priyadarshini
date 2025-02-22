@@ -25,8 +25,7 @@ export const LanguageProvider = ({ children }) => {
     <LanguageContext.Provider
       value={{ language, switchLanguage, text: languageData[language] }}
     >
-      <div className={language === "kn" ? "font-kannada" : "font-english"}>
-        {/* <div className=""> */}
+        <div className="">
         {children}
       </div>
     </LanguageContext.Provider>
