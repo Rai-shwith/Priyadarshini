@@ -197,7 +197,7 @@ const ContactForm = ({ text }) => {
             <input
               {...register("studentName")}
               type="text"
-              className="w-full bg-slate-50 cursor-pointer p-2 my-2 border rounded-lg focus:ring-2 focus:ring-blue-400"
+              className="w-full bg-slate-300 cursor-pointer p-2 my-2 border rounded-lg focus:ring-2 focus:ring-blue-400"
               placeholder="Enter student's name"
             />
           </div>
@@ -207,7 +207,7 @@ const ContactForm = ({ text }) => {
             <label className="block font-medium">{text.grade}</label>
             <select
               {...register("grade")}
-              className="w-full bg-slate-50 my-2 cursor-pointer p-2 border rounded-lg focus:ring-2 focus:ring-blue-400"
+              className="w-full bg-slate-300 my-2 cursor-pointer p-2 border rounded-lg focus:ring-2 focus:ring-blue-400"
             >
               <option value="">{text.selectGrade}</option>
               {[

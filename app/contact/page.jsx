@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar";
 import { provideText } from "@/utils/provideText";
 import { cookies } from "next/headers";
 import ContactForm from "./ContactForm";
+import ContactUs from "@/components/ContactUs";
 
 const AdmissionForm = async () => {
   const cookieStore = cookies();
@@ -12,6 +13,7 @@ const AdmissionForm = async () => {
   return (
     <>
       <NavBar text={languageData} language={lang} />
+      <ContactUs text={languageData["ContactSection"]} />
       <ContactForm text={languageData["ContactPage"]} />
     </>
   );
