@@ -19,4 +19,13 @@ const AdmissionForm = async () => {
   );
 };
 
+export const metadata = {
+  title: "Contact Us | Priyadarshini English Medium School - Bettampady",
+  icons: {
+    icon: "/images/logo.png",
+  },
+  description: "Get in touch with Priyadarshini English Medium School. Find our address, phone number, email, and reach out for admission inquiries or school information in Bettampady.",
+};
+
+
 export default AdmissionForm;

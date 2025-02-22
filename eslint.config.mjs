@@ -9,6 +9,14 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [...compat.extends("next/core-web-vitals")];
+const eslintConfig = [
+  ...compat.extends("next/core-web-vitals"),
+  {
+    rules: {
+      semi: ["error", "always"], // Example: Enforce semicolons
+      quotes: ["error", "double"], // Example: Enforce double quotes
+    },
+  },
+];
 
 export default eslintConfig;

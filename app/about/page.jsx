@@ -16,5 +16,12 @@ const AboutPage = async ({ text }) => {
     </>
   );
 };
+export const metadata = {
+  title: "About Us | Priyadarshini English Medium School - Bettampady",
+  icons: {
+    icon: "/images/logo.png",
+  },
+  description: "Learn about Priyadarshini English Medium School in Bettampady — our mission, values, and commitment to providing top-quality, holistic education for children.",
+};
 
 export default AboutPage;

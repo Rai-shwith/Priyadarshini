@@ -17,4 +17,13 @@ const AdmissionForm = async () => {
   );
 };
 
+export const metadata = {
+  title: "Admissions | Priyadarshini English Medium School - Bettampady",
+  icons: {
+    icon: "/images/logo.png",
+  },
+  description: "Join Priyadarshini English Medium School in Bettampady! Explore our admission process, eligibility, and key dates. Empower your child with holistic, values-based education.",
+};
+
+
 export default AdmissionForm;

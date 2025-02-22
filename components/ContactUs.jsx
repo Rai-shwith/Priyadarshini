@@ -7,7 +7,7 @@ const ContactUs = ({text}) => {
     <div className="mx-auto flex flex-col md:flex-row gap-5 w-11/12 mb-10 md:h-80">
       {/* Contact Details */}
       <div className="bg-white shrink-0 p-6 rounded-lg flex flex-col gap-4 items-start">
-        <h1 className="font-bold text-3xl mb-4 self-center">{text.heading}</h1>
+        <h2 className="font-bold text-3xl mb-4 self-center">{text.heading}</h2>
 
         <a
           href="tel:+1234567890"

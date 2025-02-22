@@ -23,15 +23,16 @@ export const metadata = {
     icon: "/images/logo.png",
   },
   description:
-    "The mission of P.E.M.H.P.S is to create a better future for all children. We achieve this by maximizing opportunities for children through holistic, values-based education of the highest quality and through initiatives that promote unity and meaningful social action for development.",
+    "Priyadarshini English Medium School empowers children with holistic, values-based education, fostering unity and social action for a brighter future.",
+  alternates: {
+    canonical: "https://www.priyadarshini.ashwithrai.me/",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${balooTamma2.variable} font-sans`}
-      >
+      <body className={`${inter.variable} ${balooTamma2.variable} font-sans`}>
         <LanguageProvider>
           <NotificationProvider>
             <Background>
