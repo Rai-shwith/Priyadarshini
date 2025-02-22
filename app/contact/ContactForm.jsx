@@ -158,7 +158,7 @@ const ContactForm = ({ text }) => {
                 })}
                 type="radio"
                 value="email"
-              />{" "}
+              />
               {text.emailContact}
             </label>
             <label>
@@ -168,7 +168,7 @@ const ContactForm = ({ text }) => {
                 })}
                 type="radio"
                 value="phone"
-              />{" "}
+              />
               {text.phoneContact}
             </label>
             <label>
@@ -178,7 +178,7 @@ const ContactForm = ({ text }) => {
                 })}
                 type="radio"
                 value="whatsapp"
-              />{" "}
+              />
               {text.whatsappContact}
             </label>
           </div>

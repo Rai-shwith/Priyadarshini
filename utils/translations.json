@@ -144,6 +144,26 @@
       "whatsappContact": "WhatsApp",
       "submit": "Submit Application",
       "submitting": "Submitting..."
+    },
+    "AboutPage": {
+      "heading": "About Us",
+      "introduction": "Welcome to Priyadarshini English Medium School, Bettampady. Founded by the late Bailady Babu Gowda, our school operates under the Vivekananda Vidyavardhaka Sangha, dedicated to providing quality education and fostering holistic development.",
+      "mission": "Our Mission",
+      "missionDescription": "Our mission is to provide quality education that fosters holistic development, empowering students to excel academically and grow into responsible, compassionate individuals.",
+      "vision": "Our Vision",
+      "visionDescription": "We envision a learning community where students are inspired to pursue knowledge, embrace innovation, and contribute positively to society.",
+      "values": "Our Core Values",
+      "integrity": "Integrity",
+      "integrityDescription": "Upholding honesty and strong moral principles in all endeavors.",
+      "excellence": "Excellence",
+      "excellenceDescription": "Striving for the highest standards in academics and personal growth.",
+      "respect": "Respect",
+      "respectDescription": "Fostering a culture of empathy, understanding, and mutual respect.",
+      "responsibility": "Responsibility",
+      "responsibilityDescription": "Encouraging accountability and a sense of duty towards oneself and the community.",
+      "improvement": "Continuous Improvement",
+      "improvementDescription": "Embracing lifelong learning and constant self-improvement.",
+      "annualDay": " Annual Day Celebration"
     }
   },
   "kn": {
@@ -291,6 +311,26 @@
       "whatsappContact": "ವಾಟ್ಸಪ್",
       "submit": "ಅರ್ಜಿಯನ್ನು ಸಲ್ಲಿಸಿ",
       "submitting": "ಸಲ್ಲಿಸಲಾಗುತ್ತಿದೆ..."
+    },
+    "AboutPage": {
+      "heading": "ನಮ್ಮ ಬಗ್ಗೆ",
+      "introduction": "ಬೆಟ್ಟಂಪಾಡಿಯ ಪ್ರಿಯದರ್ಶಿನಿ ಆಂಗ್ಲ ಮಾಧ್ಯಮ ಶಾಲೆಗೆ ಸ್ವಾಗತ. ದಿವಂಗತ ಬೈಲಾಡಿ ಬಾಬು ಗೌಡರಿಂದ ಸ್ಥಾಪಿತವಾದ ನಮ್ಮ ಶಾಲೆ ವಿವೇಕಾನಂದ ವಿದ್ಯಾವರ್ಧಕ ಸಂಘದ ಅಡಿಯಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. ಇದು ಗುಣಮಟ್ಟದ ಶಿಕ್ಷಣವನ್ನು ಒದಗಿಸಿ ಸರ್ವತೋಮುಖ ಅಭಿವೃದ್ಧಿಯನ್ನು ಉತ್ತೇಜಿಸಲು ಸಮರ್ಪಿತವಾಗಿದೆ.",
+      "mission": "ನಮ್ಮ ಉದ್ದೇಶ",
+      "missionDescription": "ಗುಣಮಟ್ಟದ ಶಿಕ್ಷಣವನ್ನು ನೀಡಿ, ಶೈಕ್ಷಣಿಕವಾಗಿ ಶ್ರೇಷ್ಠತೆಯನ್ನು ಸಾಧಿಸಲು ಮತ್ತು ಜವಾಬ್ದಾರಿಯುತ, ಸಹಾನುಭೂತಿಯುಳ್ಳ ವ್ಯಕ್ತಿಗಳಾಗಿ ಬೆಳೆಯಲು ವಿದ್ಯಾರ್ಥಿಗಳನ್ನು ಸಬಲಗೊಳಿಸುವುದು ನಮ್ಮ ಉದ್ದೇಶವಾಗಿದೆ.",
+      "vision": "ನಮ್ಮ ದೃಷ್ಟಿಕೋನ",
+      "visionDescription": "ವಿದ್ಯಾರ್ಥಿಗಳು ಜ್ಞಾನವನ್ನು ಅನ್ವೇಷಿಸಲು, ಹೊಸತನ್ನು ಅಳವಡಿಸಿಕೊಳ್ಳಲು ಮತ್ತು ಸಮಾಜಕ್ಕೆ ಸಕಾರಾತ್ಮಕವಾಗಿ ಕೊಡುಗೆ ನೀಡಲು ಪ್ರೇರಿತರಾಗುವ ಶೈಕ್ಷಣಿಕ ಸಮುದಾಯವನ್ನು ನಿರ್ಮಿಸುವುದು ನಮ್ಮ ದೃಷ್ಟಿಕೋನವಾಗಿದೆ.",
+      "values": "ನಮ್ಮ ಮೌಲ್ಯಗಳು",
+      "integrity": "ಸತ್ಯಸಂಧತೆ",
+      "integrityDescription": "ಎಲ್ಲಾ ಕಾರ್ಯಗಳಲ್ಲಿ ಪ್ರಾಮಾಣಿಕತೆ ಮತ್ತು ಬಲವಾದ ನೈತಿಕ ತತ್ವಗಳನ್ನು ಅನುಸರಿಸುವುದು.",
+      "excellence": "ಶ್ರೇಷ್ಠತೆ",
+      "excellenceDescription": "ಶೈಕ್ಷಣಿಕ ಮತ್ತು ವೈಯಕ್ತಿಕ ಬೆಳವಣಿಗೆಯಲ್ಲಿ ಉನ್ನತ ಮಾನದಂಡಗಳನ್ನು ಹೊಂದಲು ಪ್ರಯತ್ನಿಸುವುದು.",
+      "respect": "ಗೌರವ",
+      "respectDescription": "ಸಹಾನುಭೂತಿ, ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವಿಕೆ, ಮತ್ತು ಪರಸ್ಪರ ಗೌರವದ ಸಂಸ್ಕೃತಿಯನ್ನು ಉತ್ತೇಜಿಸುವುದು.",
+      "responsibility": "ಜವಾಬ್ದಾರಿ",
+      "responsibilityDescription": "ಸ್ವತಃ ಮತ್ತು ಸಮುದಾಯದತ್ತ ಜವಾಬ್ದಾರಿ ಮತ್ತು ಕರ್ತವ್ಯ ಭಾವನೆಯನ್ನು ಉತ್ತೇಜಿಸುವುದು.",
+      "improvement": "ನಿರಂತರ ಅಭಿವೃದ್ಧಿ",
+      "improvementDescription": "ಕಲಿಕೆ ಮತ್ತು ನಿರಂತರ ಅಭಿವೃದ್ಧಿಯನ್ನು ಅಳವಡಿಸಿಕೊಳ್ಳುವುದು.",
+      "annualDay": "ವಾರ್ಷಿಕೋತ್ಸವ"
     }
   }
 }

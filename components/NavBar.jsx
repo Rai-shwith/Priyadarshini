@@ -21,7 +21,7 @@ const NavBar = ({ text, language }) => {
             />
           </div>
           <div className="relative inset-0">
-            <div className="absolute bottom-1/2 translate-y-1/2  font-semibold text-2xl md:text-6xl text-[#644a39]">
+            <div className="absolute bottom-1/2 translate-y-1/2 h-fit  font-semibold text-2xl md:text-6xl text-[#644a39]">
               {text.schoolName}
             </div>
           </div>

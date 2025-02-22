@@ -90,7 +90,7 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} Priyadarshini English Medium School.
           All Rights Reserved.
           <p className="mt-2 mx-5 text-gray-400">
-              Website built by{" "}
+              Website built by
               <a
                 href="https://ashwithrai.me"
                 className="underline hover:text-white"
