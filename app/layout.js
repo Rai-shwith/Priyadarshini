@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { Inter } from "next/font/google";
 import { Baloo_Tamma_2 } from "next/font/google";
 import Script from "next/script";
+import Head from "next/head";
 
 const balooTamma2 = Baloo_Tamma_2({
   subsets: ["kannada", "latin"],
@@ -33,9 +34,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <meta name="google-adsense-account" content="ca-pub-6603452020198848" />
-      </head>
+      <Head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6603452020198848"
+          crossOrigin="anonymous"
+        />
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-6603452020198848"
+        />
+      </Head>
       <body className={`${inter.variable} ${balooTamma2.variable} font-sans`}>
         <NotificationProvider>
           <Background>
