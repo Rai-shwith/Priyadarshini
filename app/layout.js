@@ -5,6 +5,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Footer from "@/components/Footer";
 import { Inter } from "next/font/google";
 import { Baloo_Tamma_2 } from "next/font/google";
+import Script from "next/script";
 
 const balooTamma2 = Baloo_Tamma_2({
   subsets: ["kannada", "latin"],
@@ -32,15 +33,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body 
-      className={`${inter.variable} ${balooTamma2.variable} font-sans`}
-      >
-          <NotificationProvider>
-            <Background>
-              {children}
-              <ScrollToTop />
-            </Background>
-          </NotificationProvider>
+      <head>
+        <meta name="google-adsense-account" content="ca-pub-6603452020198848" />
+      </head>
+      <body className={`${inter.variable} ${balooTamma2.variable} font-sans`}>
+        <NotificationProvider>
+          <Background>
+            {children}
+            <ScrollToTop />
+          </Background>
+        </NotificationProvider>
         <Footer />
       </body>
     </html>
